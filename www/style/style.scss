@@ -1,0 +1,106 @@
+
+$sidebarColor: #32383B;
+
+$lightText: #FFF;
+$subLightText: #B5B5B5;
+
+$darkText: #1A1A1A;
+$subDarkText: #333;
+
+@mixin header {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin body-text {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  font-size: small;
+  background: #E7E7E7;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin:auto;
+}
+
+.side-bar {
+  max-width: 250px;
+  height: 100%;
+  position: fixed;
+  background: $sidebarColor;
+  padding: 20px 20px 0 20px;
+
+  img {
+    margin: 25px auto 20px auto;
+    width:50%;
+    box-shadow: -2px 3px 5px 1px #22282B;
+  }
+
+  h2 {
+    @include header;
+    text-align:center;
+    color: $lightText;
+  }
+
+  h3 {
+    @include header;
+    text-align:center;
+    color: $subLightText;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  ul {
+    @include header;
+    color: $subLightText;
+    list-style: none;
+    font-size: 18px;
+    padding-left:9%;
+    font-weight: 300;
+    li ul {
+      padding-left: 0;
+      margin-bottom: 15px;
+      li {
+        @include header;
+        color: $lightText;
+        font-size: 18px;
+        margin: 15px 0 15px 0;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.right-content {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+.content-section {
+  width:100%;
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 6px -2px #666;
+  margin-top: 20px;
+}
+
+.carousel {
+
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: lineanim 1s linear infinite alternate;
+}
+
+@keyframes lineanim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
