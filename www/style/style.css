@@ -45,6 +45,35 @@ body {
         margin: 15px 0 15px 0;
         font-weight: 300; }
 
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6vh;
+  width: 6vh;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%; }
+  .carousel .arrow svg {
+    margin: 10% auto 0 auto;
+    max-width: 80%;
+    max-height: 80%; }
+    .carousel .arrow svg .path {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 400;
+      stroke-linecap: round;
+      stroke: #666;
+      stroke-width: 10px;
+      transition: stroke-dashoffset 2s; }
+.carousel .left .arrow {
+  margin-left: calc(100% - 6vh); }
+  .carousel .left .arrow svg {
+    transform: rotateY(180deg); }
+.carousel .carousel-control {
+  transition: opacity 1s; }
+  .carousel .carousel-control:hover .path {
+    stroke-dashoffset: 0; }
+
 .right-content {
   width: calc(100% - 250px);
   margin-left: 250px; }
@@ -56,11 +85,6 @@ body {
   padding: 20px;
   box-shadow: 0 3px 6px -2px #666;
   margin-top: 20px; }
-
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: lineanim 1s linear infinite alternate; }
 
 @keyframes lineanim {
   to {

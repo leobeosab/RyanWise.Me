@@ -15,6 +15,12 @@ $subDarkText: #333;
   font-family: 'Merriweather', serif;
 }
 
+@mixin vertical-center {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
 body {
   font-size: small;
   background: #E7E7E7;
@@ -74,6 +80,47 @@ body {
     }
   }
 }
+.carousel {
+
+  .arrow {
+
+    @include vertical-center;
+    height: 6vh;
+    width: 6vh;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    svg {
+      margin:10% auto 0 auto;
+      max-width: 80%;
+      max-height: 80%;
+
+      .path {
+        stroke-dasharray: 200;
+        stroke-dashoffset: 400;
+        stroke-linecap: round;
+        stroke: #666;
+        stroke-width: 10px;
+        transition: stroke-dashoffset 2s;
+      }
+    }
+  }
+
+  .left .arrow {
+      margin-left: calc(100% - 6vh);
+      svg {
+          transform: rotateY(180deg);
+      }
+    }
+
+  .carousel-control {
+    transition: opacity 1s;
+
+    &:hover .path {
+      stroke-dashoffset: 0;
+    }
+  }
+}
 
 .right-content {
   width: calc(100% - 250px);
@@ -87,16 +134,6 @@ body {
   padding: 20px;
   box-shadow: 0 3px 6px -2px #666;
   margin-top: 20px;
-}
-
-.carousel {
-
-}
-
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: lineanim 1s linear infinite alternate;
 }
 
 @keyframes lineanim {

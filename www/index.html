@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Merriweather:300,400" rel="stylesheet">
     <!-- wisewebdesign includes -->
     <link rel="stylesheet" href="./style/style.css"/>
+
+    <script>
+      var arrow = "";
+      $(document).ready( () => $(".arrow").load("img/arrow.svg"));
+    </script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -44,25 +50,40 @@
                     </div>
                   </div>
                   <div class="item">
+                    <img class="img-responsive" src="img/showcase/code.jpg" alt="code.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
                     <img class="img-responsive" src="img/showcase/electronics.jpg" alt="electronics.jpg">
                     <div class="carousel-caption">
                     </div>
                   </div>
                 </div>
                 <a class="left carousel-control" href="#showcase" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <div class="arrow">
+
+                  </div>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#showcase" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <div class="arrow">
+
+                  </div>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
             </div>
+            <div class="content-section">
+              <h3> Bio </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor semper mauris sed luctus. Suspendisse volutpat, libero non elementum ultricies, felis ante rhoncus mi, a sodales leo nisl a felis. Aliquam lacinia, nunc a consectetur feugiat, sem purus rutrum felis, sed fermentum augue augue sed nunc. Duis et auctor massa, in aliquet velit. Ut pulvinar libero at lacinia pellentesque. Suspendisse potenti. Maecenas vel augue nibh. Pellentesque rutrum dui in nunc vehicula, id varius odio facilisis. Vestibulum dapibus eu eros vitae ultrices. In hac habitasse platea dictumst. Nullam lacinia nisl in odio tempor, id egestas eros gravida. Curabitur porttitor ultricies est sit amet sodales. Fusce et eros ac leo efficitur interdum.
+              </p>
+            </div>
           </div>
           <div class="col-sm-4">
-            <div class="content-section">
-                <svg xmlns="http://www.w3.org/2000/svg" width="210" height="297" viewBox="0 0 744.1 1052.4"><path class="path" d="m266.4 372.4-79.3 0-66.1 66.1-94.6 0M332.9 282.4 266 372.6m66.9-90.5 212.7 122.5-212.6 122.7-67.1-87.2-78.1 0-70.7-70.7-90 0" style="fill:none;stroke-width:1px;stroke:#000"/></svg>
+            <div class="content-section" id="appendme">
+
             </div>
           </div>
         </div>
