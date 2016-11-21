@@ -3,17 +3,15 @@
   <head>
     <title>Ryan Wise</title>
     <!-- includes -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script> <!-- Vue -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- bootstrap start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Merriweather:300,400" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap end -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Merriweather:300,400" rel="stylesheet"> <!-- Google fonts -->
     <!-- wisewebdesign includes -->
     <link rel="stylesheet" href="./style/style.css"/>
-
-    <script>
-      var arrow = "";
-      $(document).ready( () => $(".arrow").load("img/arrow.svg"));
-    </script>
+    <script src="js/api-scraper.js"></script>
+    <script src="js/main.js"></script>
 
   </head>
   <body>
@@ -82,8 +80,17 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="content-section" id="appendme">
+            <div class="content-section" id="hackerrank">
 
+            </div>
+            <div class="content-section" id="github">
+              <h3> Github Activity </h3>
+              <img class="img-responsive" src="img/github-icon.png"/>
+              <div class="git-activity">
+                <ul>
+                  <git-event v-for="event in eventList" v-bind:event="event"></git-event>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
