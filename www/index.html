@@ -38,7 +38,7 @@
       </div>
       <div class="container-fluid right-content">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-9">
             <div class="content-section">
               <div id="showcase" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
@@ -75,17 +75,27 @@
             <div class="content-section">
               <h3> Bio </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor semper mauris sed luctus. Suspendisse volutpat, libero non elementum ultricies, felis ante rhoncus mi, a sodales leo nisl a felis. Aliquam lacinia, nunc a consectetur feugiat, sem purus rutrum felis, sed fermentum augue augue sed nunc. Duis et auctor massa, in aliquet velit. Ut pulvinar libero at lacinia pellentesque. Suspendisse potenti. Maecenas vel augue nibh. Pellentesque rutrum dui in nunc vehicula, id varius odio facilisis. Vestibulum dapibus eu eros vitae ultrices. In hac habitasse platea dictumst. Nullam lacinia nisl in odio tempor, id egestas eros gravida. Curabitur porttitor ultricies est sit amet sodales. Fusce et eros ac leo efficitur interdum.
+                I am a passionate developer that believes heavily in open source for the masses. I write clean, efficent code and I am constantly learning a new techonology or perfecting my grasp on a familiar one.
+                I began programming when I was tweleve years old and I haven't looked back since then. While working full time as a software developer for Grooters Productions in Holland, Mi. I am also enrolled in
+                Davenport University currently majoring in Computer Science and minoring in Computer Engineering. Along with programming I have a strong interest in art and electronics. 
               </p>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
+            <!-- Coming soon
             <div class="content-section" id="hackerrank">
-
+              <h3> Hackerrank Activity </h3>
+              <a href="https://www.hackerrank.com/ryan_wise_asm" target="_blank"> <img class="img-responsive" src="img/hackerrank-icon.png"> </a>
+              <div class="hackerrank-activity">
+                <ul>
+                  <hackerrank-challenge v-for="challenge in challengeList" v-bind:challenge="challenge"></hackerrank-challenge>
+                </li>
+              </div>
             </div>
+            -->
             <div class="content-section" id="github">
               <h3> Github Activity </h3>
-              <img class="img-responsive" src="img/github-icon.png"/>
+              <a href="https://github.com/leobeosab" target="_blank"> <img class="img-responsive" src="img/github-icon.jpg"/> </a>
               <div class="git-activity">
                 <ul>
                   <git-event v-for="event in eventList" v-bind:event="event"></git-event>

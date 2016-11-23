@@ -7,6 +7,22 @@ $subLightText: #B5B5B5;
 $darkText: #1A1A1A;
 $subDarkText: #333;
 
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+}
+
 @mixin header {
   font-family: 'Lato', sans-serif;
 }
@@ -20,6 +36,8 @@ $subDarkText: #333;
   top:50%;
   transform: translateY(-50%);
 }
+
+@include scrollbars(.5em, #AAA);
 
 body {
   font-size: small;
@@ -134,4 +152,33 @@ body {
   padding: 20px;
   box-shadow: 0 3px 6px -2px #666;
   margin-top: 20px;
+}
+
+#github, #hackerrank {
+  h3 {
+    @include header;
+    text-align: center;
+    color: #666;
+  }
+  img {
+    max-width: 110px;
+    margin: auto;
+  }
+  .git-activity {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+
+    ul {
+      padding: 10px;
+      list-style: none;
+      .date {
+        color: #777;
+      }
+      li {
+        color: #555;
+        @include header;
+      }
+    }
+  }
 }

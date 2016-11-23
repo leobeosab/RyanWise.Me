@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em; }
+
+::-webkit-scrollbar-thumb {
+  background: #AAA; }
+
+::-webkit-scrollbar-track {
+  background: #d5d5d5; }
+
 body {
   font-size: small;
   background: #E7E7E7; }
@@ -85,5 +95,25 @@ body {
   padding: 20px;
   box-shadow: 0 3px 6px -2px #666;
   margin-top: 20px; }
+
+#github h3, #hackerrank h3 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #666; }
+#github img, #hackerrank img {
+  max-width: 110px;
+  margin: auto; }
+#github .git-activity, #hackerrank .git-activity {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: scroll; }
+  #github .git-activity ul, #hackerrank .git-activity ul {
+    padding: 10px;
+    list-style: none; }
+    #github .git-activity ul .date, #hackerrank .git-activity ul .date {
+      color: #777; }
+    #github .git-activity ul li, #hackerrank .git-activity ul li {
+      color: #555;
+      font-family: 'Lato', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
