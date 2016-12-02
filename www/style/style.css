@@ -1,119 +1,82 @@
-::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em; }
-
-::-webkit-scrollbar-thumb {
-  background: #AAA; }
-
-::-webkit-scrollbar-track {
-  background: #d5d5d5; }
+/* vars */
+/* end vars */
+/* mixins */
+/* end mixins */
+.container {
+  width: 1400px; }
 
 body {
   font-size: small;
   background: #E7E7E7; }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
-  margin: auto; }
+header {
+  height: 250px;
+  background: #333;
+  border-top: 3px solid #F8961D; }
+  header .container {
+    height: 200px;
+    padding-top: 25px; }
+    header .container h1 {
+      color: #EAEAEA;
+      font-family: 'Francois One', sans-serif; }
+    header .container h2 {
+      color: #DDD;
+      font-size: 150%;
+      font-family: 'Open Sans', sans-serif; }
+    header .container .col-sm-2 {
+      height: 200px; }
+    header .container img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 90%;
+      padding: 5%; }
 
-.side-bar {
-  max-width: 250px;
-  height: 100%;
-  position: fixed;
-  background: #32383B;
-  padding: 20px 20px 0 20px; }
-  .side-bar img {
-    margin: 25px auto 20px auto;
-    width: 50%;
-    box-shadow: -2px 3px 5px 1px #22282B; }
-  .side-bar h2 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: #FFF; }
-  .side-bar h3 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: #B5B5B5;
-    font-size: 18px;
-    margin-bottom: 25px; }
-  .side-bar ul {
-    font-family: 'Lato', sans-serif;
-    color: #B5B5B5;
-    list-style: none;
-    font-size: 18px;
-    padding-left: 9%;
-    font-weight: 300; }
-    .side-bar ul li ul {
-      padding-left: 0;
-      margin-bottom: 15px; }
-      .side-bar ul li ul li {
-        font-family: 'Lato', sans-serif;
-        color: #FFF;
-        font-size: 18px;
-        margin: 15px 0 15px 0;
-        font-weight: 300; }
-
-.carousel .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 6vh;
-  width: 6vh;
-  background: #fff;
-  border-radius: 50%;
-  top: 50%; }
-  .carousel .arrow svg {
-    margin: 10% auto 0 auto;
-    max-width: 80%;
-    max-height: 80%; }
-    .carousel .arrow svg .path {
-      stroke-dasharray: 200;
-      stroke-dashoffset: 400;
-      stroke-linecap: round;
-      stroke: #666;
-      stroke-width: 10px;
-      transition: stroke-dashoffset 2s; }
-.carousel .left .arrow {
-  margin-left: calc(100% - 6vh); }
-  .carousel .left .arrow svg {
-    transform: rotateY(180deg); }
-.carousel .carousel-control {
-  transition: opacity 1s; }
-  .carousel .carousel-control:hover .path {
-    stroke-dashoffset: 0; }
-
-.right-content {
-  width: calc(100% - 250px);
-  margin-left: 250px; }
+.main-content {
+  margin-top: 50px; }
 
 .content-section {
   width: 100%;
-  height: auto;
   background: #fff;
-  padding: 20px;
-  box-shadow: 0 3px 6px -2px #666;
-  margin-top: 20px; }
+  margin-top: 25px;
+  padding: 25px; }
+  .content-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 200%;
+    color: #666;
+    font-family: 'Francois One', sans-serif; }
+  .content-section p {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px; }
 
-#github h3, #hackerrank h3 {
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  color: #666; }
-#github img, #hackerrank img {
-  max-width: 110px;
-  margin: auto; }
-#github .git-activity, #hackerrank .git-activity {
-  width: 100%;
-  max-height: 200px;
-  overflow-y: scroll; }
-  #github .git-activity ul, #hackerrank .git-activity ul {
-    padding: 10px;
-    list-style: none; }
-    #github .git-activity ul .date, #hackerrank .git-activity ul .date {
-      color: #777; }
-    #github .git-activity ul li, #hackerrank .git-activity ul li {
-      color: #555;
-      font-family: 'Lato', sans-serif; }
+.work-experience .item h4 {
+  font-family: 'Francois One', sans-serif;
+  color: #777; }
+  .work-experience .item h4 span {
+    color: #919191; }
+.work-experience .item p {
+  font-family: 'Open Sans', sans-serif; }
+
+.contact ul {
+  margin: 0; }
+
+.education .degree {
+  font-family: 'Francois One', sans-serif;
+  color: #777;
+  font-size: 150%; }
+  .education .degree i {
+    width: 25px; }
+.education .institution {
+  padding-left: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #777; }
+
+footer {
+  height: 50px;
+  background: #333;
+  border-top: 3px solid #F8961D;
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */
