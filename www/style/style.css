@@ -2,6 +2,15 @@
 /* end vars */
 /* mixins */
 /* end mixins */
+img {
+  -webkit-user-drag: none; }
+
+a {
+  color: #F8961D;
+  transition: color .5s; }
+  a:hover {
+    color: #db7c07; }
+
 .container {
   width: 1400px; }
 
@@ -50,6 +59,19 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px; }
 
+.recent-projects .featured h4, .recent-projects .featured h6 {
+  text-align: center; }
+.recent-projects h4 {
+  font-family: 'Francois One', sans-serif;
+  color: #777; }
+.recent-projects h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: #919191;
+  font-size: 110%; }
+.recent-projects .featured img {
+  max-width: 100%;
+  margin: auto; }
+
 .work-experience .item h4 {
   font-family: 'Francois One', sans-serif;
   color: #777; }
@@ -59,7 +81,45 @@ header {
   font-family: 'Open Sans', sans-serif; }
 
 .contact ul {
-  margin: 0; }
+  margin: 0;
+  list-style: none; }
+  .contact ul li:not(:first-of-type) {
+    margin-top: 10px; }
+  .contact ul li i {
+    color: #F8961D;
+    margin-left: 0;
+    padding: 0 1.2em 0  1.2em;
+    text-indent: -1.2em; }
+
+.skills h5 {
+  font-family: 'Francois One', sans-serif;
+  margin-left: 5px;
+  color: #777;
+  width: calc( 50% - 10px );
+  display: inline-block; }
+  .skills h5:last-of-type {
+    margin-left: 0;
+    margin-right: 5px;
+    text-align: right;
+    color: #919191; }
+.skills .bar {
+  position: relative;
+  height: 30px;
+  width: 100%; }
+.skills .bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background: #F8961D; }
+.skills .master {
+  width: 100%; }
+.skills .pro {
+  width: 95%; }
+.skills .skilled {
+  width: 90%; }
+.skills .proficent {
+  width: 85%; }
 
 .education .degree {
   font-family: 'Francois One', sans-serif;

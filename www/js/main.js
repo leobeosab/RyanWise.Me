@@ -48,6 +48,7 @@ const months = [
 
 function githubCallback(data) {
   //prepare array
+  console.log(data);
   let gitData = [];
   //format our data
   for (let key of data) {

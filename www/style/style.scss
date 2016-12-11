@@ -2,7 +2,7 @@
 $header-background: #333;
 $header-name: #EAEAEA;
 $header-title: #DDD;
-$header-border: #F8961D;
+$highlight: #F8961D;
 
 $sh-col: #777;
 
@@ -25,6 +25,19 @@ $p-size: 15px;
 }
 /* end mixins */
 
+img {
+  //Stop annoying dragging
+  -webkit-user-drag: none;
+}
+
+a {
+  color: $highlight;
+  transition: color .5s;
+  &:hover {
+    color: darken($highlight, 10%);
+  }
+}
+
 .container {
   width: 1400px;
 }
@@ -37,7 +50,7 @@ body {
 header {
   height: 250px;
   background: $header-background;
-  border-top: 3px solid $header-border;
+  border-top: 3px solid $highlight;
 
   .container {
     height: 200px;
@@ -92,6 +105,31 @@ header {
   }
 }
 
+.recent-projects {
+
+  .featured {
+    h4, h6 {
+      text-align: center;
+    }
+  }
+
+  h4 {
+    @include header;
+    color: $sh-col;
+  }
+
+  h6 {
+    @include body-text;
+    color: lighten($sh-col, 10%);
+    font-size: 110%;
+  }
+
+  .featured img {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
 .work-experience {
   .item {
 
@@ -113,6 +151,68 @@ header {
 .contact {
   ul {
     margin: 0;
+    list-style: none;
+
+    li {
+
+      &:not(:first-of-type) {
+          margin-top: 10px;
+      }
+
+      i {
+        color: $highlight;
+        margin-left: 0;
+        padding: 0 1.2em 0  1.2em;
+        text-indent: -1.2em;
+      }
+    }
+  }
+}
+
+.skills {
+
+  h5 {
+    @include header;
+    margin-left: 5px;
+    color: $sh-col;
+    width: calc( 50% - 10px );
+    display: inline-block;
+    &:last-of-type {
+      margin-left: 0;
+      margin-right: 5px;
+      text-align: right;
+      color: lighten($sh-col, 10%);
+    }
+  }
+
+  .bar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+  }
+
+  .bar-inner {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background: $highlight;
+  }
+
+  .master {
+    width: 100%;
+  }
+
+  .pro {
+    width: 95%;
+  }
+
+  .skilled {
+    width: 90%;
+  }
+
+  .proficent {
+    width: 85%;
   }
 }
 
@@ -136,6 +236,6 @@ header {
 footer {
   height: 50px;
   background: $header-background;
-  border-top: 3px solid $header-border;
+  border-top: 3px solid $highlight;
   margin-top: 50px;
 }
