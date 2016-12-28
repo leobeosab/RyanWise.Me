@@ -69,12 +69,14 @@ function githubCallback(data) {
               action: "repo-create",
               date: date,
               repoUrl: url,
+              commitRef: data.commitRef,
               message: "created a new repository, " + name
             });
           } else if (key.payload.ref_type == "branch") {
             gitData.push({
               action: "branch-create",
               date: date,
+              commitRef: data.commitRef,
               repoUrl: url,
               message: "created a new branch, " + key.payload.ref + ", on " + name
             });
@@ -83,6 +85,8 @@ function githubCallback(data) {
     }
     //put it in a vue element
     vueElements.github.$data.eventList = gitData;
+
+    GitHubCalendar(".calendar", "leobeosab");
 }
 
 function hackerrankCallback(data) {

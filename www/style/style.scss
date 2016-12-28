@@ -3,6 +3,7 @@ $header-background: #333;
 $header-name: #EAEAEA;
 $header-title: #DDD;
 $highlight: #F8961D;
+$body-background: #E7E7E7;
 
 $sh-col: #777;
 
@@ -23,6 +24,15 @@ $p-size: 15px;
   top:50%;
   transform: translateY(-50%);
 }
+
+@mixin respond-to($minMax, $size) {
+  @if $minMax == "max" {
+    @media only screen and (max-width: $size) { @content; }
+  }
+  @else {
+    @media only screen and (min-width: $size) { @content; }
+  }
+}
 /* end mixins */
 
 img {
@@ -39,12 +49,12 @@ a {
 }
 
 .container {
-  width: 1400px;
+  max-width: 1400px;
 }
 
 body {
   font-size: small;
-  background: #E7E7E7;
+  background: $body-background;
 }
 
 header {
@@ -55,6 +65,36 @@ header {
   .container {
     height: 200px;
     padding-top: 25px;
+
+    .social-links-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        background: lighten($header-background, 20%);
+        border-radius: 50%;
+        margin: 15px 10px 0 0;
+
+        a {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+
+        a i { color: $header-title; font-size: 125%; }
+
+        &:not(:first-of-type) {
+          margin-left: 10px;
+        }
+      }
+    }
 
     h1 {
       color: $header-name;
@@ -127,6 +167,10 @@ header {
   .featured img {
     max-width: 100%;
     margin: auto;
+  }
+
+  .item {
+    margin-top: 30px;
   }
 }
 
@@ -231,6 +275,12 @@ header {
     font-size: $p-size;
     color: $sh-col;
   }
+}
+
+.calendar {
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: 10px;
 }
 
 footer {
