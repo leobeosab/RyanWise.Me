@@ -66,6 +66,13 @@ header {
 
 .main-content {
   margin-top: 50px; }
+  @media only screen and (max-width: 767px) {
+    .main-content {
+      padding: 0;
+      width: 100%; }
+      .main-content .col-xs-12 {
+        padding: 0;
+        width: 100%; } }
 
 .content-section {
   width: 100%;
@@ -107,7 +114,8 @@ header {
 
 .contact ul {
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
   .contact ul li:not(:first-of-type) {
     margin-top: 10px; }
   .contact ul li i {

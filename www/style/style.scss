@@ -25,9 +25,12 @@ $p-size: 15px;
   transform: translateY(-50%);
 }
 
-@mixin respond-to($minMax, $size) {
+@mixin respond-to($minMax, $size, $size2:"") {
   @if $minMax == "max" {
     @media only screen and (max-width: $size) { @content; }
+  }
+  @else if $minMax == "minMax" {
+    @media only screen and (max-width: $size) and (min-width: $size2) { @content; }
   }
   @else {
     @media only screen and (min-width: $size) { @content; }
@@ -123,6 +126,16 @@ header {
 
 .main-content {
   margin-top: 50px;
+
+  @include respond-to("max", 767px) {
+    padding: 0;
+    width: 100%;
+
+    .col-xs-12 {
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
 
 .content-section {
@@ -196,6 +209,7 @@ header {
   ul {
     margin: 0;
     list-style: none;
+    padding-left: 0;
 
     li {
 
