@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2017-01-17T23:36:58-05:00</updated><id>/blog//</id><title type="html">Ryan Wise Blog</title><subtitle>Simple blog for keeping up with my developing and all the new projects I'm working on. I should be posting weekly or bi-weekly depending on my schedule! Note this site is still currently under development
+</subtitle><entry><title type="html">First Post!</title><link href="/blog/update/2017/01/17/welcome-to-jekyll.html" rel="alternate" type="text/html" title="First Post!" /><published>2017-01-17T21:30:08-05:00</published><updated>2017-01-17T21:30:08-05:00</updated><id>/blog/update/2017/01/17/welcome-to-jekyll</id><content type="html" xml:base="/blog/update/2017/01/17/welcome-to-jekyll.html">&lt;p&gt;Hi all!&lt;/p&gt;
+
+&lt;p&gt;This is my first blog post with Jekyll for my blog. I hope to add an interface that will let me post and build jekyll without manually
+creating a markdown file and running:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build --destination ../www/blog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;but for now I will suffer with it.&lt;/p&gt;
+
+&lt;p&gt;If you don’t know what Jekyll is, it’s an awesome static site blog generator built with Ruby and it’s open source! Fuck yeah. Here is the link if you’re interested.
+&lt;a href=&quot;https://jekyllrb.com&quot; target=&quot;_blank&quot;&gt; jekyll &lt;/a&gt;&lt;/p&gt;</content><summary type="html">Hi all!</summary></entry></feed>

@@ -8,6 +8,7 @@ app.use('/img',express.static(path.join(__dirname, 'www/img')));
 app.use('/js',express.static(path.join(__dirname, 'www/js')));
 app.use('/style',express.static(path.join(__dirname, 'www/style')));
 app.use('/include', express.static(path.join(__dirname, 'www/include')));
+app.use('/blog', express.static(path.join(__dirname, 'www/blog')));
 
 http.createServer(app).listen(80, function() {
   console.log("Server started");
