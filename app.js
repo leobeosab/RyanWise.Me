@@ -11,7 +11,7 @@ app.use('/include', express.static(path.join(__dirname, 'www/include')));
 app.use('/blog', express.static(path.join(__dirname, 'www/blog')));
 
 
-require('letsencrypt-express').create({
+/*require('letsencrypt-express').create({
 
   server: 'staging'
 
@@ -19,9 +19,11 @@ require('letsencrypt-express').create({
 
 , agreeTos: true
 
-, approveDomains: [ 'wiseweb-design.com' ]
+, approveDomains: [ 'wiseweb-design.com, ryanwise.me' ]
 
 , app: app
 
-}).listen(80, 443);
+}).listen(80, 443);*/
+
+app.listen(80, function(){ console.log("yo");} );
 
