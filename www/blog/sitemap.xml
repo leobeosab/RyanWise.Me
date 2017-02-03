@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost/blog/first-post/</loc>
+<loc>/blog/first-post/</loc>
 <lastmod>2017-01-17T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost/blog/404</loc>
+<loc>/blog/404</loc>
 </url>
 <url>
-<loc>http://localhost/blog/tags/</loc>
+<loc>/blog/tags/</loc>
 </url>
 <url>
-<loc>http://localhost/blog/</loc>
+<loc>/blog/</loc>
 </url>
 <url>
-<loc>http://localhost/blog/about/</loc>
+<loc>/blog/about/</loc>
 </url>
 <url>
-<loc>http://localhost/blog/posts/</loc>
+<loc>/blog/posts/</loc>
 </url>
 <url>
-<loc>http://localhost/blog/projects/</loc>
+<loc>/blog/projects/</loc>
 </url>
 </urlset>
