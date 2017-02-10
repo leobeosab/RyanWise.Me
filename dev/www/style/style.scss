@@ -1,0 +1,305 @@
+/* vars */
+$header-background: #333;
+$header-name: #EAEAEA;
+$header-title: #DDD;
+$highlight: #F8961D;
+$body-background: #E7E7E7;
+
+$sh-col: #777;
+
+$p-size: 15px;
+/* end vars */
+
+/* mixins */
+@mixin header {
+  font-family: 'Francois One', sans-serif;
+}
+
+@mixin body-text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin vertical-center {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+@mixin respond-to($minMax, $size, $size2:"") {
+  @if $minMax == "max" {
+    @media only screen and (max-width: $size) { @content; }
+  }
+  @else if $minMax == "minMax" {
+    @media only screen and (max-width: $size) and (min-width: $size2) { @content; }
+  }
+  @else {
+    @media only screen and (min-width: $size) { @content; }
+  }
+}
+/* end mixins */
+
+img {
+  //Stop annoying dragging
+  -webkit-user-drag: none;
+}
+
+a {
+  color: $highlight;
+  transition: color .5s;
+  &:hover {
+    color: darken($highlight, 10%);
+  }
+}
+
+.container {
+  max-width: 1400px;
+}
+
+body {
+  font-size: small;
+  background: $body-background;
+}
+
+header {
+  height: 250px;
+  background: $header-background;
+  border-top: 3px solid $highlight;
+
+  .container {
+    height: 200px;
+    padding-top: 25px;
+
+    .social-links-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        background: lighten($header-background, 20%);
+        border-radius: 50%;
+        margin: 15px 10px 0 0;
+
+        a {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+
+        a i { color: $header-title; font-size: 125%; }
+
+        &:not(:first-of-type) {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    h1 {
+      color: $header-name;
+      @include header;
+    }
+
+    h2 {
+      color: $header-title;;
+      font-size: 150%;
+      @include body-text;
+    }
+
+    .col-sm-2 {
+      height: 200px;
+    }
+
+    img {
+      position:absolute;
+      top:50%;
+      transform: translateY(-50%);
+      max-width: 90%;
+      padding: 5%;
+    }
+  }
+}
+
+.main-content {
+  margin-top: 50px;
+
+  @include respond-to("max", 767px) {
+    padding: 0;
+    width: 100%;
+
+    .col-xs-12 {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.content-section {
+  width: 100%;
+  background: #fff;
+  margin-top: 25px;
+  padding: 25px;
+
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 200%;
+    color: #666;
+    @include header;
+  }
+
+  p {
+    color: #666;
+    @include body-text;
+    font-size: $p-size;
+  }
+}
+
+.recent-projects {
+
+  .featured {
+    h4, h6 {
+      text-align: center;
+    }
+  }
+
+  h4 {
+    @include header;
+    color: $sh-col;
+  }
+
+  h6 {
+    @include body-text;
+    color: lighten($sh-col, 10%);
+    font-size: 110%;
+  }
+
+  .featured img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .item {
+    margin-top: 30px;
+  }
+}
+
+.work-experience {
+  .item {
+
+    h4 {
+      @include header;
+      color: $sh-col;
+
+      span {
+          color: lighten($sh-col, 10%);
+      }
+    }
+
+    p {
+      @include body-text;
+    }
+  }
+}
+
+.contact {
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+
+      &:not(:first-of-type) {
+          margin-top: 10px;
+      }
+
+      i {
+        color: $highlight;
+        margin-left: 0;
+        padding: 0 1.2em 0  1.2em;
+        text-indent: -1.2em;
+      }
+    }
+  }
+}
+
+.skills {
+
+  h5 {
+    @include header;
+    margin-left: 5px;
+    color: $sh-col;
+    width: calc( 50% - 10px );
+    display: inline-block;
+    &:last-of-type {
+      margin-left: 0;
+      margin-right: 5px;
+      text-align: right;
+      color: lighten($sh-col, 10%);
+    }
+  }
+
+  .bar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+  }
+
+  .bar-inner {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background: $highlight;
+  }
+
+  .master {
+    width: 100%;
+  }
+
+  .pro {
+    width: 95%;
+  }
+
+  .skilled {
+    width: 90%;
+  }
+
+  .proficent {
+    width: 85%;
+  }
+}
+
+.education {
+  .degree {
+    @include header;
+    color: $sh-col;
+    font-size: 150%;
+    i {
+      width: 25px;
+    }
+  }
+  .institution {
+    padding-left: 25px;
+    @include body-text;
+    font-size: $p-size;
+    color: $sh-col;
+  }
+}
+
+.calendar {
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: 10px;
+}
+
+footer {
+  height: 50px;
+  background: $header-background;
+  border-top: 3px solid $highlight;
+  margin-top: 50px;
+}

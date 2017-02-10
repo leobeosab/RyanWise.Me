@@ -1,29 +1,23 @@
 var http = require("http");
 var express = require("express");
+var connect = require("connect");
 var app = express();
 var path = require("path");
-var routes = require("./routes")(app);
+//var routes = require("./routes")(app);
+var vhost = require("vhost");
 
-app.use('/img',express.static(path.join(__dirname, 'www/img')));
-app.use('/js',express.static(path.join(__dirname, 'www/js')));
-app.use('/style',express.static(path.join(__dirname, 'www/style')));
-app.use('/include', express.static(path.join(__dirname, 'www/include')));
-app.use('/blog', express.static(path.join(__dirname, 'www/blog')));
+function createVirtualHost(domain, dirPath) {
+  return vhost(domain, express.static( dirPath ));
+}
 
 
-/*require('letsencrypt-express').create({
+//Vhosts
+var devHost = createVirtualHost("dev.ryanwise.me", "dev/www/");
+var defaultHost = createVirtualHost("localhost", "www/");
 
-  server: 'staging'
+app.use(devHost);
+app.use(defaultHost);
 
-, email: 'ryan.wise@wiseweb-design.com'
-
-, agreeTos: true
-
-, approveDomains: [ 'wiseweb-design.com, ryanwise.me' ]
-
-, app: app
-
-}).listen(80, 443);*/
-
-app.listen(80, function(){ console.log("yo");} );
-
+app.listen(3000, function() {
+  console.log("Now listening on port :80");
+} );

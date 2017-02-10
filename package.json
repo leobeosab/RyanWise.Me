@@ -10,6 +10,8 @@
     "le-store-certbot": "~2.0.3",
     "letsencrypt": "~2.1.8",
     "letsencrypt-express": "^2.0.6",
+    "vhost" : "^3.0.2",
+    "connect" : "*",
     "vue": "^2.0.5"
   }
 }
