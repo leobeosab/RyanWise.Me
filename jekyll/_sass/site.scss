@@ -23,6 +23,23 @@ body {
 	    background-image: none !important;
 		background: $white;
 	}
+
+	&::-webkit-scrollbar-track
+	{
+		background-color: #222;
+	}
+
+	&::-webkit-scrollbar
+	{
+		width: 6px;
+		background-color: #222;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background-color: #FF4136;
+	}
+
 }
 * {
 	box-sizing: border-box;
@@ -194,6 +211,7 @@ header .entry-meta {
 }
 .feature {
     @include transition(.5s);
+		background-size: 100%;
     @media #{$small} {
         background-image: none !important;
     }

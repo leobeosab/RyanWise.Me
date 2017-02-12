@@ -1,14 +1,14 @@
 # Site
 title:              Ryan Wise
 bio:                'Software Developer, currently working in Holland, Michigan.'
-description:        "A small blog to show others the things I have learned along the way while creating a personal reference."
+description:        "I'm a passionate programmer, ever since I was 12 and picked up C++. I've been interested in video game programming, networking, linux, full-stack dev and anything low level. I also have a love for hardware and electronics."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                /blog
+url:
 
 # Jekyll
 permalink:          /:title/
