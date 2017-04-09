@@ -16,7 +16,7 @@ Cloud Nine is an online IDE that provides you with your very own Ubuntu box to c
 
 ### Step One: Creating a Workspace
 
-Go to [CloudNine]("https://c9.io") and create an account / login. I reccomend logging in with Github as it provides easy integration with your projects. Create a new Workspace enter a name and optional description and choose blank for the template option.
+Go to [CloudNine](https://c9.io) and create an account / login. I reccomend logging in with Github as it provides easy integration with your projects. Create a new Workspace enter a name and optional description and choose blank for the template option.
 
 <img alt="Base Setup" src="/assets/img/posts/java-on-c9/c9-project-setup.png">
 

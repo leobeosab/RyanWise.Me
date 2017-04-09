@@ -293,6 +293,6 @@ We make sure to destroy the previous level by using the parent_name and create a
 
 Now when you run your code you should have an output like this:
 
-<img alt="Custom Window" src="/assets/img/posts/unity-map-from-imgithubage/completed.png">
+<img alt="Custom Window" src="/assets/img/posts/unity-map-from-image/completed.png">
 
 Thanks for reading and as always the code is available on my [Github](https://github.com/leobeosab/UnityMapFromImage).
