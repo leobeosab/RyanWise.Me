@@ -55,7 +55,7 @@ and there we are, we have a custom window that says "Hello, custom windows"
 
 In order to read our image we first have to import it into Unity make sure that there is no compression on it and Read/Write is enabled or else we won't be able to read it.
 
-<img alt="Import Settings" src="/assets/img/posts/unity-map-from-image/imag_import_settings.png">
+<img alt="Import Settings" src="/assets/img/posts/unity-map-from-image/image_import_settings.png">
 
 It should look like the image above
 
