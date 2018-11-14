@@ -498,6 +498,10 @@ h3.title a {
   color: #282828;
   text-decoration: none; }
 
+h3.title a p {
+  padding: 0px 20%;
+}
+
 .post-list {
   text-align: left; }
   .post-list ul {
