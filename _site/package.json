@@ -1,0 +1,17 @@
+{
+  "name": "wisewebdesign",
+  "version": "0.0.1",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "express": "~4.14.0",
+    "le-acme-core": "~2.0.9",
+    "le-challenge-fs": "~2.0.8",
+    "le-sni-auto": "~2.1.0",
+    "le-store-certbot": "~2.0.3",
+    "letsencrypt": "~2.1.8",
+    "letsencrypt-express": "^2.0.6",
+    "vhost" : "^3.0.2",
+    "connect" : "*",
+    "vue": "^2.0.5"
+  }
+}

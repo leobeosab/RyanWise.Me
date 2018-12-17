@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-13T21:37:01-05:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">AWS EC2 Discord Bot</title><link href="/aws-discord-bot/" rel="alternate" type="text/html" title="AWS EC2 Discord Bot" /><published>2018-09-03T00:00:00-04:00</published><updated>2018-09-03T00:00:00-04:00</updated><id>/aws-discord-bot</id><content type="html" xml:base="/aws-discord-bot/">&lt;p&gt;This is the first step I’ve taken in messing around with the AWS boto SDK for Python 3. I decided to use this SDK and Discord’s Python library to solve an issue I’ve been faced with recently. I have had a couple pals of mine playing on a Feed the Beast server on an AWS medium EC2 unit, which gets expensive when not turned off. So everytime someone wanted to play they would message me and I would turn the server on and when no one was on I would turn the server off. Now this works but if I’m not available either a friend doesn’t get to play or the server just sits racking up hours.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-12-17T01:40:19-05:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">Pavlov VR exploits</title><link href="/pavlov-vr-explots/" rel="alternate" type="text/html" title="Pavlov VR exploits" /><published>2018-12-16T00:00:00-05:00</published><updated>2018-12-16T00:00:00-05:00</updated><id>/pavlov-vr-explots</id><content type="html" xml:base="/pavlov-vr-explots/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://store.steampowered.com/app/555160/Pavlov_VR/&quot;&gt;Pavlov VR&lt;/a&gt; is a popular CS:GO like VR shooter, fast paced and fun. Currently it’s one of the most popular VR shooters on Steam. That being said as far as I have been able to tell it has little to no anti-cheat. Which means no SBD, no defense for dll injection or modifying memory while the game is running. So for educational purposes I will be showing you how to do two little hacks that work in every game mode and server. (Do not hack in online games, I am not responsible for you getting banned plus cheating is for losers)&lt;/p&gt;
+
+&lt;h3 id=&quot;bottomless-clip-hack&quot;&gt;Bottomless clip hack&lt;/h3&gt;
+
+&lt;p&gt;You’re going to need &lt;a href=&quot;https://www.cheatengine.org&quot;&gt;Cheat Engine&lt;/a&gt; installed for this. If you aren’t familiar with Cheat Engine it’s basically a memory scanning and debugging tool, not exactly user friendly but it’s powerful.&lt;/p&gt;
+
+&lt;p&gt;Start up Pavlov. Once it starts open Cheat Engine and attach it to the Pavlov.exe process. Walk over to the table in the spawn room and pick up your chosen gun and load it. Next switch over to Cheat Engine and hit new scan / first scan with a type of “Unknown initial value”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;First Scan&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now change Scan Type to “Value decreased by …” and set the value field to one. Shoot the gun once and hit next scan, repeat this process untill there are only two values left that go down whenever you shoot the gun.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Finding the magazine values&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once that’s done correctly right click on both of the values and click “See what writes to this address” pick up the gun and shoot look for an instruction that appears when you shoot it, right click it and view in disassembler. It should look like the following.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Finding the decrementing code&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we look up a few lines we can see an instruction of “dec ax” it’s a safe assumption to assume that this is what’s reducing the value of the magazine, so we are going to right click it and hit “replace with code that does nothing” which will insert a bunch of nop (no operation) instructions in lieu of the decrement instruction. Now we should be able to tab back into the game and shoot guns as much as our heart desires.&lt;/p&gt;
+
+&lt;p&gt;Here is a demo:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NrzeNsQ_s_Y&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;no-cock-bolt-actions&quot;&gt;No cock bolt actions&lt;/h3&gt;
+
+&lt;p&gt;That last exploit was cool and all but I want a semi automatic .50 Cal to really get my point across, how do I manage that? It’s actually a very similar process. What we have to do is check for a boolean wether or not a certain gun is cocked. (booleans are normally byte values with a range of 0 = false and 1 - 255 = true in most games, in Pavlov 0 is false and 1 is true which makes it easier). So we go back to the table and select a gun we want and load and cock it. Now we set up a new scan for an initial value of 1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Initial Scan for bolt action&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now uncock the gun and set the value to 0 and hit next scan, cock it set the value to 1 and repeat until you only have a few values left. This is where it gets harder than the previous exploit, there will be 6-10 values that all seem correct. You’re going to have to watch closely when you uncock or cock the gun to see what changes instantly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Finding the decrementing code&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp8.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you believe you have that value start watching that address for writes. Now you want to watch for the write when you uncock the gun, this will give us a spot to stop it from ever writing an uncock action. From the time of writing the instruction that shows up will be “mov byte ptr [rax+rdx], 02” once we find it we replace it to code that does nothing (a bunch of nops).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Finding the decrementing code&quot; src=&quot;/assets/img/posts/pavlov-vr-exploits/pavlovexp9.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Alright now we can go into our own little private match, buy the bolt action heavy rifle and go to town on some bots!&lt;/p&gt;
+
+&lt;p&gt;Demo:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/2ESwe8l_I88&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Note: every time the game restarts you will have to redo these exploits. You could make a modified .exe using another debugger such as OllyDebug but I’m not going to give a tutorial on that since I believe it has a higher chance of being abused. If you want to try it out go for it, I believe it would make a great learning experience :)&lt;/p&gt;
+
+&lt;p&gt;I will be writing Dave Villz to tell him that an anti cheat would be a great thing for this game or at least server checked values on multiplayer servers (that way we can still have fun offline ;) ) but for now use this only for educational purposes, cheating online isn’t cool and just ruins the game for everyone. Good luck and have fun everyone!&lt;/p&gt;</content><category term="Assembly" /><category term="Hacks" /><category term="Cheat Engine" /><category term="Exploits" /><summary type="html">Bottemless clip and no cock bolt action hack</summary></entry><entry><title type="html">AWS EC2 Discord Bot</title><link href="/aws-discord-bot/" rel="alternate" type="text/html" title="AWS EC2 Discord Bot" /><published>2018-09-03T00:00:00-04:00</published><updated>2018-09-03T00:00:00-04:00</updated><id>/aws-discord-bot</id><content type="html" xml:base="/aws-discord-bot/">&lt;p&gt;This is the first step I’ve taken in messing around with the AWS boto SDK for Python 3. I decided to use this SDK and Discord’s Python library to solve an issue I’ve been faced with recently. I have had a couple pals of mine playing on a Feed the Beast server on an AWS medium EC2 unit, which gets expensive when not turned off. So everytime someone wanted to play they would message me and I would turn the server on and when no one was on I would turn the server off. Now this works but if I’m not available either a friend doesn’t get to play or the server just sits racking up hours.&lt;/p&gt;
 
 &lt;p&gt;To solve this I decided to write a Discord bot that can control the basics of EC2 instances that are tied to an AWS account. The current working version I have has 4 commands and as of now can only control one instance; I plan on fleshing it out more as I get the time. The bot can stop, start, reboot and give the status of the instance. This means even if I’m not around anyone on Discord server can turn off the EC2 instance or start it at their leisure. Making sure I don’t have to be around all the time or give out my AWS credientials to anyone.&lt;/p&gt;
 
