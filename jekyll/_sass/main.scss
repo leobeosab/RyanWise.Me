@@ -8,7 +8,8 @@
  *  WEB: http://taylantatli.me
  *
 */
-
+@import "bourbon/bourbon";
+@import "slider";
 @import "variables";
 @import "mixins";
 @import "normalize";
@@ -21,4 +22,4 @@
 @import "vendor/font-awesome";
 @import "vendor/animate";
 @import "vendor/magnific-popup/magnific-popup";
-@import "print"
+@import "print";

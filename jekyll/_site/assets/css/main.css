@@ -7,6 +7,152 @@
  *  WEB: http://taylantatli.me
  *
 */
+/*---- NUMBER OF SLIDE CONFIGURATION ----*/
+#slider.wrap {
+  max-width: 60em;
+  margin: 1em auto;
+  position: relative;
+  margin-bottom: 40px; }
+
+#slider {
+  /*---- SET UP CONTROL ----*/
+  /* Info Box */
+  /* Slider Styling */
+  /*---- SET POSITION FOR SLIDE ----*/
+  /*---- TABLET ----*/
+  /*---- MOBILE----*/ }
+  #slider input {
+    display: none; }
+  #slider .slider-wrapper {
+    max-height: 450px; }
+  #slider .inner {
+    width: 500%;
+    line-height: 0; }
+  #slider article {
+    width: 20%;
+    float: left;
+    position: relative;
+    bottom: 100px; }
+    #slider article img {
+      width: 100%; }
+  #slider .slider-prev-next-control {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    #slider .slider-prev-next-control label {
+      display: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.7; }
+      #slider .slider-prev-next-control label:hover {
+        opacity: 1; }
+  #slider .slider-dot-control {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center; }
+    #slider .slider-dot-control label {
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #bbb;
+      transition: all 0.3s; }
+      #slider .slider-dot-control label:hover {
+        background: #ccc;
+        border-color: #777; }
+  #slider .info {
+    position: absolute;
+    font-style: italic;
+    line-height: 20px;
+    opacity: 0;
+    color: #000;
+    text-align: left;
+    transition: all 1000ms ease-out 600ms; }
+    #slider .info h3 {
+      color: #fcfff4;
+      margin: 0 0 5px;
+      font-weight: normal;
+      font-size: 1.5em;
+      font-style: normal; }
+    #slider .info.top-left {
+      top: 30px;
+      left: 30px; }
+    #slider .info.top-right {
+      top: 30px;
+      right: 30px; }
+    #slider .info.bottom-left {
+      bottom: 30px;
+      left: 30px; }
+    #slider .info.bottom-right {
+      bottom: 30px;
+      right: 30px; }
+  #slider .slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #666;
+    background: #fff;
+    background: #fcfff4;
+    transform: translateZ(0);
+    transition: all 500ms ease-out; }
+    #slider .slider-wrapper .inner {
+      transform: translateZ(0);
+      transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1); }
+  #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin: 0;
+    line-height: 38px;
+    font-size: 3em;
+    display: block;
+    color: #777; }
+  #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after {
+    content: "\f105";
+    padding-left: 15px; }
+  #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(2), #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(3), #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(4), #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(5), #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(1) {
+    display: block;
+    float: right;
+    margin-right: 5px; }
+  #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(1), #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(2), #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(3), #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(4), #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(5) {
+    display: block;
+    float: left;
+    margin-left: 5px; }
+  #slider #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slider #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slider #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slider #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slider #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
+    content: "\f104";
+    padding-left: 8px; }
+  #slider #slide1:checked ~ .slider-dot-control label:nth-child(1), #slider #slide2:checked ~ .slider-dot-control label:nth-child(2), #slider #slide3:checked ~ .slider-dot-control label:nth-child(3), #slider #slide4:checked ~ .slider-dot-control label:nth-child(4), #slider #slide5:checked ~ .slider-dot-control label:nth-child(5) {
+    background: #333; }
+  #slider #slide1:checked ~ .slider-wrapper article:nth-child(1) .info, #slider #slide2:checked ~ .slider-wrapper article:nth-child(2) .info, #slider #slide3:checked ~ .slider-wrapper article:nth-child(3) .info, #slider #slide4:checked ~ .slider-wrapper article:nth-child(4) .info, #slider #slide5:checked ~ .slider-wrapper article:nth-child(5) .info {
+    opacity: 1; }
+  #slider #slide1:checked ~ .slider-wrapper .inner {
+    margin-left: 0%; }
+  #slider #slide2:checked ~ .slider-wrapper .inner {
+    margin-left: -100%; }
+  #slider #slide3:checked ~ .slider-wrapper .inner {
+    margin-left: -200%; }
+  #slider #slide4:checked ~ .slider-wrapper .inner {
+    margin-left: -300%; }
+  #slider #slide5:checked ~ .slider-wrapper .inner {
+    margin-left: -400%; }
+  @media only screen and (max-width: 850px) and (min-width: 450px) {
+    #slider .slider-wrapper {
+      border-radius: 0; } }
+  @media only screen and (max-width: 450px) {
+    #slider .slider-wrapper {
+      border-radius: 0; }
+    #slider .slider-wrapper .info {
+      opacity: 0; } }
+  @media only screen and (min-width: 850px) {
+    #slider body {
+      padding: 0 80px; } }
+
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   -ms-text-size-adjust: 100%;
@@ -497,10 +643,6 @@ header .entry-meta {
 h3.title a {
   color: #282828;
   text-decoration: none; }
-
-h3.title a p {
-  padding: 0px 20%;
-}
 
 .post-list {
   text-align: left; }
@@ -1429,7 +1571,7 @@ All this is done for any sub-level being entered.
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
@@ -1446,24 +1588,24 @@ All this is done for any sub-level being entered.
   font-size: 5em; }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center; }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none; }
   .fa-ul > li {
     position: relative; }
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center; }
   .fa-li.fa-lg {
-    left: -1.85714em; }
+    left: -1.8571428571em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -4064,7 +4206,7 @@ button::-moz-focus-inner {
   padding: 0;
   width: 90px;
   height: 110px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   .mfp-arrow:active {
     margin-top: -54px; }
   .mfp-arrow:hover, .mfp-arrow:focus {
