@@ -13,10 +13,11 @@ comments: true
 ---
 
 # Intro
-Using this amazing tool I found called [Apex](https://apex.run) we will get a basic Python, Node.js, Ruby, etc AWS Lambda API running in minutes! We are going to make an API I'll be using Python for this guide but it only takes 1 line of code to change the runtime you want :)
+Using this amazing tool I found called [Apex](https://apex.run) we will get a basic Python, Node.js, Ruby, etc AWS Lambda API running in minutes! I'll be using Python for this guide but it only takes 1 line of code to change the runtime you want :)
 
 ## Step One: Installing & Setting up AWS CLI + Apex
-The easiest way to setup Apex is to use the AWS CLI though this is completely up to you, Apex also allows Environment Variables, IAM roles and more. 
+The easiest way to setup Apex is to use the AWS CLI, though this is completely up to you. Apex also allows configuration via Environment Variables, IAM roles and more.
+
 So let's install AWS CLI
 
 MacOS (My OS at the time of writing)
@@ -46,11 +47,11 @@ Create a functions.json file with the following values
   "description": "Collection of lmabda functions to accomplish tasks of a sort",
   "memory": 128,
   "timeout": 5,
-  "role": "arn:aws:iam::910144801136:role/AWSAPITools_lambda_function"
+  "role": "arn:aws:iam::910144801136:role/AWSAPITools_lambda_function" // Note this is just my role, yours that you create will be different
 }
 ```
 
-Now onto the actual functions directory which will (obviously) hold our functions' code. The directory will be made up of folders with the name of whatever function you want it to hold. Within each directory will be an index file, necessary dependencies, and an optional function.json file.
+Now onto the actual functions directory which will (obviously) hold our functions' code. The directory will be made up of folders with the name of whatever function you want it to hold. Each folder will contain an index file, necessary dependencies, and an optional function.json file.
 
 ### Project Structure
 ```
