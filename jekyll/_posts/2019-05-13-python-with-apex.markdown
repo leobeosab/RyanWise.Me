@@ -15,6 +15,8 @@ comments: true
 # Intro
 Using this amazing tool I found called [Apex](https://apex.run) we will get a basic Python, Node.js, Ruby, etc AWS Lambda API running in minutes! I'll be using Python for this guide but it only takes 1 line of code to change the runtime you want :)
 
+If you want to see a real world application of this kind of API see one of my projects [here](/lambda-s3-updater)
+
 ## Step One: Installing & Setting up AWS CLI + Apex
 The easiest way to setup Apex is to use the AWS CLI, though this is completely up to you. Apex also allows configuration via Environment Variables, IAM roles and more.
 
