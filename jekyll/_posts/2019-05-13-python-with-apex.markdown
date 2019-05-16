@@ -51,7 +51,7 @@ Create a functions.json file with the following values
 }
 ```
 
-Now onto the actual functions directory which will (obviously) hold our functions' code. The directory will be made up of folders with the name of whatever function you want it to hold. Each folder will contain an index file, necessary dependencies, and an optional function.json file.
+Now onto the actual functions directory which will (obviously) hold our functions' code. The directory will be made up of folders with the name of whatever function you want it to hold. Each folder will contain be an index file, necessary dependencies, and an optional function.json file.
 
 ### Project Structure
 ```
