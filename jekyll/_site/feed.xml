@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-16T00:20:16-04:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">Lambda S3 Website Auto-Updater</title><link href="/lambda-s3-updater/" rel="alternate" type="text/html" title="Lambda S3 Website Auto-Updater" /><published>2019-05-15T00:00:00-04:00</published><updated>2019-05-15T00:00:00-04:00</updated><id>/lambda-s3-updater</id><content type="html" xml:base="/lambda-s3-updater/">&lt;h1 id=&quot;updating-an-s3-bucket-with-lambda&quot;&gt;Updating an S3 bucket with Lambda&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-05-16T00:25:53-04:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">Lambda S3 Website Auto-Updater</title><link href="/lambda-s3-updater/" rel="alternate" type="text/html" title="Lambda S3 Website Auto-Updater" /><published>2019-05-15T00:00:00-04:00</published><updated>2019-05-15T00:00:00-04:00</updated><id>/lambda-s3-updater</id><content type="html" xml:base="/lambda-s3-updater/">&lt;h1 id=&quot;updating-an-s3-bucket-with-lambda&quot;&gt;Updating an S3 bucket with Lambda&lt;/h1&gt;
 
 &lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
 &lt;p&gt;I got tired of having to take my build directory and manually put it in S3, make it public and create a fucking CloudFront invalidation everytime I wanted to make a little change to my website [I’m very lazy]. In addition to the fact I could make a post about it and learn more about interacting with S3 services from within Lambda.&lt;/p&gt;
@@ -641,58 +641,7 @@ and there we are, we have a custom window that says “Hello, custom windows”&
 
 &lt;p&gt;&lt;img alt=&quot;Custom Window&quot; src=&quot;/assets/img/posts/unity-map-from-image/completed.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Thanks for reading and as always the code is available on my &lt;a href=&quot;https://github.com/leobeosab/UnityMapFromImage&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="C#" /><category term="Unity" /><category term="Image Manipulation" /><summary type="html">How to parse an image and generate a map from it in Unity using a custom editor window</summary></entry><entry><title type="html">Java Development on Cloud Nine</title><link href="/java-on-c9/" rel="alternate" type="text/html" title="Java Development on Cloud Nine" /><published>2017-02-21T00:00:00-05:00</published><updated>2017-02-21T00:00:00-05:00</updated><id>/java-on-c9</id><content type="html" xml:base="/java-on-c9/">&lt;h1 id=&quot;java-development-on-cloud-nine-ide&quot;&gt;Java Development on Cloud Nine IDE&lt;/h1&gt;
-
-&lt;p&gt;Cloud Nine is an online IDE that provides you with your very own Ubuntu box to create a project in. It has templates for C++, NodeJS, PHP &amp;amp; Wordpress, Ruby and more. There isn’t any template for Java Development. So I will go through how to setup a blank workspace for Java development. This is escpecially handy if you’re a student and only have a Chromebook to develop on.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-one-creating-a-workspace&quot;&gt;Step One: Creating a Workspace&lt;/h3&gt;
-
-&lt;p&gt;Go to &lt;a href=&quot;https://c9.io&quot;&gt;CloudNine&lt;/a&gt; and create an account / login. I reccomend logging in with Github as it provides easy integration with your projects. Create a new Workspace enter a name and optional description and choose blank for the template option.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Base Setup&quot; src=&quot;/assets/img/posts/java-on-c9/c9-project-setup.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Give that a little bit to process and you should come up with a screen that looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Initial Workspace&quot; src=&quot;/assets/img/posts/java-on-c9/c9-base-page.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;step-two-installing-the-jdk&quot;&gt;Step Two: Installing the JDK&lt;/h3&gt;
-
-&lt;p&gt;In the terminal section near the bottom of the screen type the following commands:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-
-sudo apt-get install oracle-java8-installer
-#hit yes and accept the license agreement&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;If you are not familiar with Ubuntu I will explain what is going on here. First we add a new repository to our package manager, essentially just allowing it to grab new binaries to install from the url we specified. Next we update our package manager so it is aware of all the new binaries we can download. Last we install the JDK.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-three-test-the-installation&quot;&gt;Step Three: Test the Installation&lt;/h3&gt;
-
-&lt;p&gt;I just created a basic Hello World in Java.&lt;/p&gt;
-
-&lt;p&gt;Create a new file by right clicking in the workspace panel and hit new file. Create a file name like HelloWorld.java&lt;/p&gt;
-
-&lt;p&gt;Here is the code I used:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Note that the class should be what you named your file. Minus the .java.&lt;/p&gt;
-
-&lt;p&gt;Now to compile and test your code you enter the following commands.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;javac HelloWorld.java
-java HelloWorld&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Javac compiles your code and java (your main class) runs it.&lt;/p&gt;
-
-&lt;p&gt;If all went  well you should see “Hello, World!” in the terminal window.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Final Result&quot; src=&quot;/assets/img/posts/java-on-c9/final-result.png&quot; /&gt;&lt;/p&gt;</content><category term="Java" /><category term="CloudNine" /><category term="Ubuntu" /><summary type="html">How to get up and running with Java Development on the Cloud Nine IDE</summary></entry><entry><title type="html">Binary Keyboard Project</title><link href="/binary-keyboard/" rel="alternate" type="text/html" title="Binary Keyboard Project" /><published>2017-02-12T00:00:00-05:00</published><updated>2017-02-12T00:00:00-05:00</updated><id>/binary-keyboard</id><content type="html" xml:base="/binary-keyboard/">&lt;p&gt;I started this project to help teach binary. This is a useful and fun way for someone who doesn’t quite understand how binary to ascii works. I’m switching out the tactile buttons used for mechanical key switches for an easier experience typing.&lt;/p&gt;
+&lt;p&gt;Thanks for reading and as always the code is available on my &lt;a href=&quot;https://github.com/leobeosab/UnityMapFromImage&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="C#" /><category term="Unity" /><category term="Image Manipulation" /><summary type="html">How to parse an image and generate a map from it in Unity using a custom editor window</summary></entry><entry><title type="html">Binary Keyboard Project</title><link href="/binary-keyboard/" rel="alternate" type="text/html" title="Binary Keyboard Project" /><published>2017-02-12T00:00:00-05:00</published><updated>2017-02-12T00:00:00-05:00</updated><id>/binary-keyboard</id><content type="html" xml:base="/binary-keyboard/">&lt;p&gt;I started this project to help teach binary. This is a useful and fun way for someone who doesn’t quite understand how binary to ascii works. I’m switching out the tactile buttons used for mechanical key switches for an easier experience typing.&lt;/p&gt;
 
 &lt;p&gt;Obviously it is not very practical as a standalone keyboard as typing 8 bits for every one keystroke is tiresome. Here is the code if you’re interested, I’ll have a tutorial soon!&lt;/p&gt;
 
