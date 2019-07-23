@@ -21,7 +21,8 @@ I've been trying to get my 2011 iMac to run a project on my newer iPad Pro runni
 
 This is pretty easy, grab them from a newer mac running the latest version of XCode located at ```/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/```. Or if you don't have a newer mac laying around this [Repository](https://github.com/filsv/iPhoneOSDeviceSupport) will probably have the ones you need.
 
-Once you have the files just drop the folder (or unzip the folder) into the XCode install you want to run example: </br> ```/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/``` </br> 
+Once you have the files just drop the folder (or unzip the folder) into the XCode install you want to run example:
+ ```/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/```
 now restart XCode and give it a go!
 
 ### Side Note (dyld: Library not loaded: @rpath/libswiftCore.dylib)
