@@ -67,7 +67,7 @@ I will be writing Dave Villz to tell him that an anti cheat would be a great thi
 
 So I contacted Dave concerning these glaring issues and let's say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. After this reaction I made it public.
 
-![TwitterChatOne](/assets/img/posts/pavlov-vr-exploits/davechatone.png) ![TwitterChatTwo](/assets/img/posts/pavlov-vr-exploits/davechattwo.png)
+![TwitterChatTwo](/assets/img/posts/pavlov-vr-exploits/davechattwo.png) ![TwitterChatOne](/assets/img/posts/pavlov-vr-exploits/davechatone.png) 
 
 After I posted a Steam Review talking about his reaction, Dave said "He's not supporting PC anymore" in his Discord Server. 
 [Imgur Link](https://i.imgur.com/NHZDVHK.jpg@)
