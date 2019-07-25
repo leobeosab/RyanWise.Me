@@ -62,3 +62,8 @@ Demo:
 Note: every time the game restarts you will have to redo these exploits. You could make a modified .exe using another debugger such as OllyDebug but I'm not going to give a tutorial on that since I believe it has a higher chance of being abused. If you want to try it out go for it, I believe it would make a great learning experience :)
 
 I will be writing Dave Villz to tell him that an anti cheat would be a great thing for this game or at least server checked values on multiplayer servers (that way we can still have fun offline ;) ) but for now use this only for educational purposes, cheating online isn't cool and just ruins the game for everyone. Good luck and have fun everyone!
+
+
+### Update 
+
+So I contacted Dave concerning these glaring issues and let's say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. 
