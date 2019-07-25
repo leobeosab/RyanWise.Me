@@ -63,7 +63,11 @@ Note: every time the game restarts you will have to redo these exploits. You cou
 
 I will be writing Dave Villz to tell him that an anti cheat would be a great thing for this game or at least server checked values on multiplayer servers (that way we can still have fun offline ;) ) but for now use this only for educational purposes, cheating online isn't cool and just ruins the game for everyone. Good luck and have fun everyone!
 
+### Update
 
-### Update 
+So I contacted Dave concerning these glaring issues and let's say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. After this reaction I made it public.
 
-So I contacted Dave concerning these glaring issues and let's say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. 
+![TwitterChatOne](/assets/img/posts/pavlov-vr-exploits/davechatone.png) ![TwitterChatTwo](/assets/img/posts/pavlov-vr-exploits/davechattwo.png)
+
+After I posted a Steam Review talking about his reaction, Dave said "He's not supporting PC anymore" in his Discord Server. 
+[Imgur Link](https://i.imgur.com/NHZDVHK.jpg@)
