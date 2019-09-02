@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-25T10:31:21-04:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">XCode Deploy on New Devices with Old Macs</title><link href="/deploy-to-new-devices-xcode/" rel="alternate" type="text/html" title="XCode Deploy on New Devices with Old Macs" /><published>2019-07-22T00:00:00-04:00</published><updated>2019-07-22T00:00:00-04:00</updated><id>/deploy-to-new-devices-xcode</id><content type="html" xml:base="/deploy-to-new-devices-xcode/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-02T18:21:49-04:00</updated><id>/</id><title type="html">Ryan Wise</title><subtitle>Full time software engineer, with freelance on the side. I do a lot of side projects involving electronics and technologies I find interesting. In addition I have a passion for cars, motorcycles and motorsport, I enjoy working on them and competing in events.</subtitle><entry><title type="html">Winning Intigriti’s XSS Challenge</title><link href="/intigriti-xss-challenge/" rel="alternate" type="text/html" title="Winning Intigriti's XSS Challenge" /><published>2019-09-02T00:00:00-04:00</published><updated>2019-09-02T00:00:00-04:00</updated><id>/intigriti-xss-challenge</id><content type="html" xml:base="/intigriti-xss-challenge/">&lt;h2 id=&quot;intigriti-xss-challenge--3&quot;&gt;Intigriti XSS Challenge # 3&lt;/h2&gt;
+
+&lt;p&gt;Intigriti put out their third XSS challenge recently in late August 2019. I decided to try my hand on it as I’m new to Intigriti’s platform and bug hunting in general. The way it works is they put out an intentionally vulnerable &lt;a href=&quot;https://challenge.intigriti.io/3/&quot;&gt;webpage&lt;/a&gt; just waiting for your xss payload. Out of everyone who submits a correct submission they will randomly pick one  researcger and award them a one year Burp License and some private program invites.&lt;/p&gt;
+
+&lt;p&gt;After a few hours of trying different things I finally got it. It was a difficult but rewarding and fun challenge. So I did a quick writeup on their submission page and sent it off. Within a couple hours it was confirmed and that was the end of it.. or so I thought.&lt;/p&gt;
+
+&lt;p&gt;I woke up on September 2nd and I had a Twitter notification from Intigriti, I got selected as their one winner! It was awesome! Especially since I still didn’t have a Burp Suite Pro License. Thanks again to Intigriti for giving back to the community and being awesome!&lt;/p&gt;
+
+&lt;h2 id=&quot;okay-cool-but-how&quot;&gt;Okay, Cool, but how?&lt;/h2&gt;
+
+&lt;p&gt;Alright here is my writeup on how I tackled this challenge.&lt;/p&gt;
+
+&lt;h3 id=&quot;information-gathering&quot;&gt;Information Gathering&lt;/h3&gt;
+
+&lt;p&gt;Upon visiting the page for the first time you are greeted with an image containing the JS the page uses and the general rules for the challenge. The JS was interesting to say the least.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serializeToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;decodeURIComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And the user’s PHPSESSID cookie just dangling at the bottom&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PHPSESSID=9ca3e188b91f6140323a987c00bc51c3&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;From this we can tell it appends the user’s cookie(s) to the end of the page and then proceeds to take the page’s content and for some reason serializes and then deserializes it… Odd.&lt;/p&gt;
+
+&lt;h3 id=&quot;closing-in&quot;&gt;Closing in&lt;/h3&gt;
+
+&lt;p&gt;According to Intigriti’s hints on &lt;a href=&quot;https://twitter.com/intigriti/status/1166309484328837121&quot;&gt;twitter&lt;/a&gt; it was a Chrome only XSS vuln which helps a lot to narrow down what we are looking for.&lt;/p&gt;
+
+&lt;p&gt;After wasting hours looking for Chrome XSS vulns on exploit-db, CVE, etc. I decided that probably wasn’t the correct approach. So I moved onto comparing Chrome (which I never use) to Firefox (My ‘daily driver’ browser). I was pretty lucky and came upon a difference in the context menus when you right click on the page itself. Chrome has a “save as” option. So coupling that with Intigriti’s hint of “200 likes, time for a new hint! When we say ‘no self XSS’, we do NOT say ‘no obscure user interaction’”. It seemed pretty clear what we needed to checkout next.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-attack&quot;&gt;The Attack&lt;/h2&gt;
+
+&lt;h3 id=&quot;entry-point&quot;&gt;Entry Point&lt;/h3&gt;
+
+&lt;p&gt;When you save a page with Chrome’s super handy feature you get a nice .html and folder downloaded to whereever you’d like. Upon opening the file after I saved it I noticed this comment in the body.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- saved from url=(0033)https://challenge.intigriti.io/3/ --&amp;gt;&lt;/span&gt;
+...
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We are so close you can.. I don’t know smell it?&lt;/p&gt;
+
+&lt;h3 id=&quot;payload-crafting&quot;&gt;Payload Crafting&lt;/h3&gt;
+
+&lt;p&gt;We just need an ending comment tag and a basic XSS Payload now to add to the end of our URL. In my case I just used this: &lt;code class=&quot;highlighter-rouge&quot;&gt;--&amp;gt;&amp;lt;img src=xss onerror=alert(1)&amp;gt;&lt;/code&gt; but that’s not a valid URL. All that needs to be done is to go to a JS console and the url with our payload added on in the encodeURI() function. And we get this&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;encodeURI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://challenge.intigriti.io/3/--&amp;gt;&amp;lt;img src=xss onerror=alert(1)&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// returns&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;https://challenge.intigriti.io/3/--%3E%3Cimg%20src=xss%20onerror=alert(1)%3E&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;win&quot;&gt;Win&lt;/h3&gt;
+
+&lt;p&gt;Now just open in Chrome, save as a complete webpage and open locally and you should see a satisfying alert popup :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/intigriti-xss-challenge/alert.png&quot; alt=&quot;AlertImg&quot; /&gt;&lt;/p&gt;</content><category term="XSS" /><category term="Hacks" /><category term="Bug Bounty" /><category term="Exploits" /><summary type="html">I won one of Intigriti's XSS challenge and got a Burp suite pro license! ($400)</summary></entry><entry><title type="html">XCode Deploy on New Devices with Old Macs</title><link href="/deploy-to-new-devices-xcode/" rel="alternate" type="text/html" title="XCode Deploy on New Devices with Old Macs" /><published>2019-07-22T00:00:00-04:00</published><updated>2019-07-22T00:00:00-04:00</updated><id>/deploy-to-new-devices-xcode</id><content type="html" xml:base="/deploy-to-new-devices-xcode/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/posts/deploy-to-new-devices-xcode/header.png&quot; alt=&quot;Promblem Image&quot; /&gt;&lt;/p&gt;
 
@@ -342,7 +406,7 @@ apex invoke ExampleFunction
 
 &lt;p&gt;So I contacted Dave concerning these glaring issues and let’s say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. After this reaction I made it public.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/posts/pavlov-vr-exploits/davechattwo.png&quot; alt=&quot;TwitterChatTwo&quot; /&gt; &lt;img src=&quot;/assets/img/posts/pavlov-vr-exploits/davechatone.png&quot; alt=&quot;TwitterChatOne&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/pavlov-vr-exploits/davechat.png&quot; alt=&quot;TwitterChat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After I posted a Steam Review talking about his reaction, Dave said “He’s not supporting PC anymore” in his Discord Server. 
 &lt;a href=&quot;https://i.imgur.com/NHZDVHK.jpg@&quot;&gt;Imgur Link&lt;/a&gt;&lt;/p&gt;</content><category term="Assembly" /><category term="Hacks" /><category term="Cheat Engine" /><category term="Exploits" /><summary type="html">Bottemless clip and no cock bolt action hack</summary></entry><entry><title type="html">AWS EC2 Discord Bot</title><link href="/aws-discord-bot/" rel="alternate" type="text/html" title="AWS EC2 Discord Bot" /><published>2018-09-03T00:00:00-04:00</published><updated>2018-09-03T00:00:00-04:00</updated><id>/aws-discord-bot</id><content type="html" xml:base="/aws-discord-bot/">&lt;p&gt;This is the first step I’ve taken in messing around with the AWS boto SDK for Python 3. I decided to use this SDK and Discord’s Python library to solve an issue I’ve been faced with recently. I have had a couple pals of mine playing on a Feed the Beast server on an AWS medium EC2 unit, which gets expensive when not turned off. So everytime someone wanted to play they would message me and I would turn the server on and when no one was on I would turn the server off. Now this works but if I’m not available either a friend doesn’t get to play or the server just sits racking up hours.&lt;/p&gt;
