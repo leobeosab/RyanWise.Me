@@ -6,8 +6,8 @@
 <span class="na">[MenuItem("Window/MapGenerator")]</span>
 <span class="k">static</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">// Get existing open window or if none, make a new one
-</span>    <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
+    <span class="c1">// Get existing open window or if none, make a new one</span>
+    <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
     <span class="n">window</span><span class="p">.</span><span class="nf">Show</span><span class="p">();</span>
 <span class="p">}</span>
 
@@ -30,8 +30,8 @@
     <span class="p">[</span><span class="nf">MenuItem</span><span class="p">(</span><span class="s">"Window/MapGenerator"</span><span class="p">)]</span>
     <span class="k">static</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="c1">// Get existing open window or if none, make a new one
-</span>        <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
+        <span class="c1">// Get existing open window or if none, make a new one</span>
+        <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
         <span class="n">window</span><span class="p">.</span><span class="nf">Show</span><span class="p">();</span>
     <span class="p">}</span>
 
@@ -42,8 +42,8 @@
 
     <span class="k">void</span> <span class="nf">OnGUI</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="c1">// Parameters for ObjectField: title for the field, what variable to write object to, typeof object, if scene elements can be used
-</span>        <span class="n">level_data</span> <span class="p">=</span> <span class="p">(</span><span class="n">Texture2D</span><span class="p">)</span><span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">ObjectField</span><span class="p">(</span><span class="s">"Load Map"</span><span class="p">,</span> <span class="n">level_data</span><span class="p">,</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Texture2D</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
+        <span class="c1">// Parameters for ObjectField: title for the field, what variable to write object to, typeof object, if scene elements can be used</span>
+        <span class="n">level_data</span> <span class="p">=</span> <span class="p">(</span><span class="n">Texture2D</span><span class="p">)</span><span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">ObjectField</span><span class="p">(</span><span class="s">"Load Map"</span><span class="p">,</span> <span class="n">level_data</span><span class="p">,</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Texture2D</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">level_data</span><span class="p">)</span>
             <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Image loaded!"</span><span class="p">);</span>
     <span class="p">}</span>
@@ -62,8 +62,8 @@
     <span class="p">[</span><span class="nf">MenuItem</span><span class="p">(</span><span class="s">"Window/MapGenerator"</span><span class="p">)]</span>
     <span class="k">static</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="c1">// Get existing open window or if none, make a new one
-</span>        <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
+        <span class="c1">// Get existing open window or if none, make a new one</span>
+        <span class="n">LevelEditorExtension</span> <span class="n">window</span> <span class="p">=</span> <span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">)</span><span class="n">EditorWindow</span><span class="p">.</span><span class="nf">GetWindow</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">LevelEditorExtension</span><span class="p">));</span>
         <span class="n">window</span><span class="p">.</span><span class="nf">Show</span><span class="p">();</span>
     <span class="p">}</span>
 
@@ -74,8 +74,8 @@
 
     <span class="k">void</span> <span class="nf">OnGUI</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="c1">// Parameters for ObjectField: title for the field, what variable to write object to, typeof object, if scene elements can be used
-</span>        <span class="n">level_data</span> <span class="p">=</span> <span class="p">(</span><span class="n">Texture2D</span><span class="p">)</span><span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">ObjectField</span><span class="p">(</span><span class="s">"Load Map"</span><span class="p">,</span> <span class="n">level_data</span><span class="p">,</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Texture2D</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
+        <span class="c1">// Parameters for ObjectField: title for the field, what variable to write object to, typeof object, if scene elements can be used</span>
+        <span class="n">level_data</span> <span class="p">=</span> <span class="p">(</span><span class="n">Texture2D</span><span class="p">)</span><span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">ObjectField</span><span class="p">(</span><span class="s">"Load Map"</span><span class="p">,</span> <span class="n">level_data</span><span class="p">,</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Texture2D</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">level_data</span><span class="p">)</span>
             <span class="nf">ReadImage</span><span class="p">();</span>
     <span class="p">}</span>
@@ -93,8 +93,8 @@
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
-<span class="p">}</span></code></pre></figure> <p>Note the ‘using System.Linq’ at the top, this is necessary to be able to call colors.Contains(). Now when we add the image to our window we should see all the added colors be printed out to the log.</p> <h2 id="step-six-creating-the-objects-to-generate">Step Six: Creating the objects to generate</h2> <p>I created some basic prefabs that were a sprite with a 2D collider.</p> <p>The actual art assets I used were Kenney’s (Asset Jesus) over on <a href="http://kenney.nl">Kenney.nl</a> I reccomend looking there for any assets you might need, he provides them for free with a CC0 license. If you use some of his work consider supporting him on <a href="https://www.patreon.com/kenney">Patreon</a>. That way he can keep up the fantastic work.</p> <p><img alt="Prefabs" src="/assets/img/posts/unity-map-from-image/prefab_example.png"></p> <h2 id="step-seven-combining-what-we-know">Step Seven: Combining what we know</h2> <p>Now we can actually get into creating the full thing, we are going to read the map’s colors display them as color fields with an empty object field right below each of them. We will also create a simple ‘struct’ in C# that will hold our color and prefab data in one object. Then once we click a button it will add all of our prefabs to the scene in the correct positions.</p> <p>The global variables section:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">//Simple struct to hold our level object
-</span><span class="na">[System.Serializable]</span>
+<span class="p">}</span></code></pre></figure> <p>Note the ‘using System.Linq’ at the top, this is necessary to be able to call colors.Contains(). Now when we add the image to our window we should see all the added colors be printed out to the log.</p> <h2 id="step-six-creating-the-objects-to-generate">Step Six: Creating the objects to generate</h2> <p>I created some basic prefabs that were a sprite with a 2D collider.</p> <p>The actual art assets I used were Kenney’s (Asset Jesus) over on <a href="http://kenney.nl">Kenney.nl</a> I reccomend looking there for any assets you might need, he provides them for free with a CC0 license. If you use some of his work consider supporting him on <a href="https://www.patreon.com/kenney">Patreon</a>. That way he can keep up the fantastic work.</p> <p><img alt="Prefabs" src="/assets/img/posts/unity-map-from-image/prefab_example.png"></p> <h2 id="step-seven-combining-what-we-know">Step Seven: Combining what we know</h2> <p>Now we can actually get into creating the full thing, we are going to read the map’s colors display them as color fields with an empty object field right below each of them. We will also create a simple ‘struct’ in C# that will hold our color and prefab data in one object. Then once we click a button it will add all of our prefabs to the scene in the correct positions.</p> <p>The global variables section:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">//Simple struct to hold our level object</span>
+<span class="na">[System.Serializable]</span>
 <span class="k">public</span> <span class="k">class</span> <span class="nc">LevelObject</span>
 <span class="p">{</span>
     <span class="k">public</span> <span class="n">Color</span> <span class="n">color</span><span class="p">;</span>
@@ -109,8 +109,8 @@
 
 <span class="k">private</span> <span class="kt">string</span> <span class="n">parent_name</span><span class="p">;</span>
 <span class="k">private</span> <span class="n">Texture2D</span> <span class="n">level_data</span><span class="p">;</span>
-<span class="k">private</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">LevelObject</span><span class="p">&gt;</span> <span class="n">level_items</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">LevelObject</span><span class="p">&gt;();</span></code></pre></figure> <p>As you see we create a new public class (basically a struct) called LevelObject that takes in a Color and a GameObject in the constructor. Making it easy to store our data in one array and iterate through it.</p> <p>OnGUI Method:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">//Draw the elements
-</span><span class="k">void</span> <span class="nf">OnGUI</span><span class="p">()</span>
+<span class="k">private</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">LevelObject</span><span class="p">&gt;</span> <span class="n">level_items</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">LevelObject</span><span class="p">&gt;();</span></code></pre></figure> <p>As you see we create a new public class (basically a struct) called LevelObject that takes in a Color and a GameObject in the constructor. Making it easy to store our data in one array and iterate through it.</p> <p>OnGUI Method:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">//Draw the elements</span>
+<span class="k">void</span> <span class="nf">OnGUI</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="n">level_data</span> <span class="p">=</span> <span class="p">(</span><span class="n">Texture2D</span><span class="p">)</span><span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">ObjectField</span><span class="p">(</span><span class="s">"Load Map"</span><span class="p">,</span> <span class="n">level_data</span><span class="p">,</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Texture2D</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
     <span class="n">parent_name</span> <span class="p">=</span> <span class="n">EditorGUILayout</span><span class="p">.</span><span class="nf">TextField</span><span class="p">(</span><span class="s">"Parent Object Name: "</span><span class="p">,</span> <span class="s">"Level"</span><span class="p">);</span>
@@ -118,8 +118,8 @@
     <span class="p">{</span>
         <span class="n">GUILayout</span><span class="p">.</span><span class="nf">Label</span><span class="p">(</span><span class="s">"Custom Objects"</span><span class="p">);</span>
 
-        <span class="c1">//Don't want to read an image 2-3 times a second, wasting CPU cycles
-</span>        <span class="k">if</span> <span class="p">(</span><span class="n">level_items</span><span class="p">.</span><span class="n">Count</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span>
+        <span class="c1">//Don't want to read an image 2-3 times a second, wasting CPU cycles</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">level_items</span><span class="p">.</span><span class="n">Count</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">)</span>
             <span class="nf">ReadImage</span><span class="p">();</span>
 
         <span class="nf">GenerateFields</span><span class="p">();</span>
@@ -129,8 +129,8 @@
     <span class="p">}</span>
 <span class="p">}</span></code></pre></figure> <p>In this function we define a parent_name input that will be used to create an empty game object to serve as the parent and delete the old one if there is one. We also make sure to only read the image if we don’t have our level_items yet. After that we call the GenerateFields function which will add our Color and Object fields to the GUI. We added a button that will actually generate the level / map when it’s pressed so long as there is an image currently loaded.</p> <p>ReadImage Method:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">void</span> <span class="nf">ReadImage</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">//Easier to put colors in a list and check if col is in the list than use a for loop over all the LevelObjects
-</span>    <span class="n">List</span><span class="p">&lt;</span><span class="n">Color</span><span class="p">&gt;</span> <span class="n">colors</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Color</span><span class="p">&gt;();</span>
+    <span class="c1">//Easier to put colors in a list and check if col is in the list than use a for loop over all the LevelObjects</span>
+    <span class="n">List</span><span class="p">&lt;</span><span class="n">Color</span><span class="p">&gt;</span> <span class="n">colors</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Color</span><span class="p">&gt;();</span>
 
     <span class="k">foreach</span> <span class="p">(</span><span class="n">Color</span> <span class="n">col</span> <span class="k">in</span> <span class="n">level_data</span><span class="p">.</span><span class="nf">GetPixels</span><span class="p">())</span>
     <span class="p">{</span>
@@ -140,8 +140,8 @@
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="c1">//Free up some memory
-</span>    <span class="n">colors</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+    <span class="c1">//Free up some memory</span>
+    <span class="n">colors</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure> <p>Very similar to our old ReadImage except this time we add a new LeveLObject to the list and set colors to null to free some memory.</p> <p>GenerateFields Method:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">void</span> <span class="nf">GenerateFields</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">level_items</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
@@ -151,16 +151,16 @@
     <span class="p">}</span>
 <span class="p">}</span></code></pre></figure> <p>Very simple we just loop through the LevelObjects list and set the fields.</p> <p>InsertObjects Method:</p> <figure class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">void</span> <span class="nf">InsertObjects</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">//Make sure not to create multiple levels
-</span>    <span class="nf">DestroyImmediate</span><span class="p">(</span><span class="n">GameObject</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="n">parent_name</span><span class="p">));</span>
+    <span class="c1">//Make sure not to create multiple levels</span>
+    <span class="nf">DestroyImmediate</span><span class="p">(</span><span class="n">GameObject</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="n">parent_name</span><span class="p">));</span>
 
     <span class="n">GameObject</span> <span class="n">parent</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">GameObject</span><span class="p">(</span><span class="n">parent_name</span><span class="p">);</span>
 
     <span class="kt">int</span> <span class="n">height</span> <span class="p">=</span> <span class="n">level_data</span><span class="p">.</span><span class="n">height</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">width</span> <span class="p">=</span> <span class="n">level_data</span><span class="p">.</span><span class="n">width</span><span class="p">;</span>
 
-    <span class="c1">//Grab the size of a regular object by the renderer bounds
-</span>    <span class="kt">float</span> <span class="n">tile_size</span> <span class="p">=</span> <span class="n">level_items</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">prefab</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Renderer</span><span class="p">&gt;().</span><span class="n">bounds</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+    <span class="c1">//Grab the size of a regular object by the renderer bounds</span>
+    <span class="kt">float</span> <span class="n">tile_size</span> <span class="p">=</span> <span class="n">level_items</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">prefab</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Renderer</span><span class="p">&gt;().</span><span class="n">bounds</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
 
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">y</span> <span class="p">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="n">y</span><span class="p">++)</span>
     <span class="p">{</span>
