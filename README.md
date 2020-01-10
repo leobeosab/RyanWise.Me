@@ -4,10 +4,9 @@ Portfolio site for showcasing projects and life events, statically hosted using 
 
 ## Tools Needed
 * Jekyll
-* Sass
-
-## TODO
-1. Remove what remains of the express.js application that hosted this website
 
 ## Notes
 Repository is automatically synched with S3 bucket on pushes to Master using a Webhook and Lambda function
+
+## Theme
+Theme is forked from [TaylanTatli/Moon](https://github.com/TaylanTatli/Moon) with a few style and page layout changes
