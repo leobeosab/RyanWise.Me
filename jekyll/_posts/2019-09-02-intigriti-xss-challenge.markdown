@@ -13,7 +13,7 @@ comments: false
 
 ## Intigriti XSS Challenge # 3
 
-Intigriti put out their third XSS challenge recently in late August 2019. I decided to try my hand on it as I'm new to Intigriti's platform and bug hunting in general. The way it works is they put out an intentionally vulnerable [webpage](https://challenge.intigriti.io/3/) just waiting for your xss payload. Out of everyone who submits a correct submission they will randomly pick one  researcger and award them a one year Burp License and some private program invites.
+Intigriti put out their third XSS challenge recently in late August 2019. I decided to try my hand on it as I'm new to Intigriti's platform and bug hunting in general. The way it works is they put out an intentionally vulnerable [webpage](https://challenge.intigriti.io/3/) just waiting for your xss payload. Out of everyone who submits a correct submission they will randomly pick one  researcher and award them a one year Burp License and some private program invites.
 
 After a few hours of trying different things I finally got it. It was a difficult but rewarding and fun challenge. So I did a quick writeup on their submission page and sent it off. Within a couple hours it was confirmed and that was the end of it.. or so I thought.
 
