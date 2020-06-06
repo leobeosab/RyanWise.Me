@@ -1,9 +1,5 @@
-#Node Modules
-node_modules
-
-#Ignore sass cache
-www/style/.sass-cache/*
-.sass-cache/
+#Ignore build
+jekyll/_site/
 
 #Ignore .DS_Store
 *.DS_Store
