@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pavlov VR exploits"
+title:  "Pavlov VR \"exploits\""
 date:   2018-12-16
 excerpt: "Bottemless clip and no cock bolt action hack"
 tag:
@@ -12,12 +12,12 @@ comments: false
 ---
 
 # Intro
-
-[Pavlov VR](https://store.steampowered.com/app/555160/Pavlov_VR/) is a popular CS:GO like VR shooter, fast paced and fun. Currently it's one of the most popular VR shooters on Steam. That being said as far as I have been able to tell it has little to no anti-cheat. Which means no SBD, no defense for dll injection or modifying memory while the game is running. So for educational purposes I will be showing you how to do two little hacks that work in every game mode and server. (Do not hack in online games, I am not responsible for you getting banned plus cheating is for losers)
+[Pavlov VR](https://store.steampowered.com/app/555160/Pavlov_VR/) is a popular CS:GO like VR shooter, fast paced and fun. Currently it's one of the most popular VR shooters on Steam. That being said as far as I have been able to tell it has little to no anti-cheat. Which means no SBD, no defense for dll injection or modifying memory while the game is running. So for educational purposes I will be showing you how to do two little "hacks" that work in every game mode and server. (Do not hack in online games, I am not responsible for you getting banned plus cheating is for losers)
+This is a result of me just playing around and I reported this issue to the developer. 
 
 ### Bottomless clip hack
 
-You're going to need [Cheat Engine](https://www.cheatengine.org) installed for this. If you aren't familiar with Cheat Engine it's basically a memory scanning and debugging tool, not exactly user friendly but it's powerful. 
+You're going to need [Cheat Engine](https://www.cheatengine.org) installed for this. If you aren't familiar with Cheat Engine it's basically a memory scanning and debugging tool. 
 
 Start up Pavlov. Once it starts open Cheat Engine and attach it to the Pavlov.exe process. Walk over to the table in the spawn room and pick up your chosen gun and load it. Next switch over to Cheat Engine and hit new scan / first scan with a type of "Unknown initial value".  
 
@@ -58,16 +58,4 @@ Demo:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2ESwe8l_I88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Conclusion
-
-Note: every time the game restarts you will have to redo these exploits. You could make a modified .exe using another debugger such as OllyDebug but I'm not going to give a tutorial on that since I believe it has a higher chance of being abused. If you want to try it out go for it, I believe it would make a great learning experience :)
-
-I will be writing Dave Villz to tell him that an anti cheat would be a great thing for this game or at least server checked values on multiplayer servers (that way we can still have fun offline ;) ) but for now use this only for educational purposes, cheating online isn't cool and just ruins the game for everyone. Good luck and have fun everyone!
-
-### Update
-
-So I contacted Dave concerning these glaring issues and let's say he was less than happy. He also grabbed my screen name off the video on this write up and banned me for playing against bots and doing this. I sent him this article which at the time was unlisted so can only be accessed directly by URL. After this reaction I made it public.
-
-![TwitterChat](/assets/img/posts/pavlov-vr-exploits/davechat.png)
-
-After I posted a Steam Review talking about his reaction, Dave said "He's not supporting PC anymore" in his Discord Server. 
-[Imgur Link](https://i.imgur.com/NHZDVHK.jpg@)
+This is a brain dead way to cheat and only works because (at the time of writing) the server the game is running/hosted on doesn't check/handle the values for ammo. I hope you all learned something and can help make the games and internet we love more secure. Find and report vulns :) 
