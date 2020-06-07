@@ -189,7 +189,7 @@ Copyright = '&copy; 2020 Ryan Wise'
 
 [deployment]
 
-[[deployment.targes]]
+[[deployment.targets]]
 name = "s3"
 URL = "s3://ryanwise.me?region=us-west-2"
 cloudFrontDistributionID = "E8G7ATUPBJEIE"
