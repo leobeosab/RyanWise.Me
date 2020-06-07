@@ -1,5 +1,5 @@
 +++
-type = "itemized"
+type = "projects"
 author = "George Jetson"
 date = "2017-06-22"
 title = "Fancy App 2"

@@ -1,5 +1,5 @@
 +++
-type = "itemized"
+type = "projects"
 author = "George Jetson"
 date = "2017-06-22"
 title = "Fancy App 1"
@@ -8,9 +8,9 @@ featured = ""
 featuredpath = ""
 featuredalt = ""
 categories = [""]
-linktitle = "hello"
+linktitle = "Hello"
 format = "Android"
-link = "https://github.com/leobeosab"
+link = "https://google.com"
 +++
 
 ## App 1

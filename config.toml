@@ -1,10 +1,10 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
-theme = "hugo-future-imperfect"
+title = "Ryan Wise's Blog"
+theme = "hugo-future-imperfect-edited"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = ""
 googleAnalytics = ""
 pluralizeListTitles = false
 # Set the followings to true as part of your site SEO
@@ -129,8 +129,8 @@ canonifyURLs = true
   weight = 3
 
 [[menu.main]]
-  name = "Itemized"
-  url = "/itemized/"
+  name = "Projects"
+  url = "/projects/"
   identifier = "fa fa-list"
   weight = 4
 

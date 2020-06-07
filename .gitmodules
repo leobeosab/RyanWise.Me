@@ -1,0 +1,3 @@
+[submodule "themes/hugo-future-imperfect-edited"]
+	path = themes/hugo-future-imperfect-edited
+	url = https://github.com/leobeosab/hugo-future-imperfect-edited
