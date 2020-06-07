@@ -1,5 +1,6 @@
 #Ignore build
 jekyll/_site/
+public/
 
 #Ignore .DS_Store
 *.DS_Store
