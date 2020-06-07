@@ -1,29 +1,24 @@
 +++
-title = "About Hugo"
-date = "2014-04-09"
+title = "About Ryan"
+date = "2020-6-6"
 +++
 
-Hugo is a static site engine written in Go.
+## Intro
+Hi! I'm Ryan, a software engineer with a focus on security, performance and clean design. If any of my projects interest you and you have questions or want something similar made for you please reach out to me! I can be reached on Twitter or email. 
 
+## Experience
+* 4 years of professional programming experience since graduating high school in 2016
+* Enterprise Java, Oracle SQL
+* Enterprise C#, VB, MSSQL
+* Enterprise Node.js, Postgres SQL
+* CTFs through Hack the Box, GrrCON and more!
 
-It makes use of a variety of open source projects including:
+## Knowledge in the following areas
+* AWS
+* Back end [Java, Node.js, C#, Go, Python, PHP]
+* Front End [Javascript, Jquery, React, Angular]
+* Red Team security [CSRF, RCE, XSS, IDOR, Information Disclosure]
+* Creating CLI tools
+* Hardware [Arduino, ESP8266 Node MCU]
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+#### Thanks for reading! 

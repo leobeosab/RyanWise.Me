@@ -127,6 +127,7 @@ fi
 ```
 
 Now if we run that script with our wordlist that just has mail, code, dev in it we will get results for those subdomains. To fudge our script finding new domains we are going to add finance to our wordlist. Which if all goes well should lead to this message in our Discord channel
+
 ![practical example](/assets/img/posts/recon-upgrade-discord/practicalexample.png)
 
 Now this is a super simple example and so much more can be done for formatting and different kinds of scans. Follow my [github](https://github.com/leobeosab) and [twitter](https://twitter.com/ride_faster)

@@ -1,23 +1,22 @@
----
-layout: post
-title:  "Lambda S3 Website Auto-Updater"
-date:   2019-05-15
-excerpt: "Whenever a push is made to my website repo, this Lambda function updates my website with the build"
-feature: assets/img/projects/aws+github.png
-project: true
-comments: true
-tag:
-- S3
-- Github
-- Python
-- Lambda
-- AWS
----
++++
+author = "Ryan Wise"
+categories = ["Bots"]
+tags = ["python", "aws", "ec2"]
+date = "2019-05-13"
+description = "Learn how to trigger a lambda that updates S3 whenever you push to your Github repo!"
+featured = ""
+featuredalt = "Binary Keyboard"
+featuredpath = "/assets/img/projects/aws+github.png"
+linktitle = "Github"
+link = "https://github.com/leobeosab/AwsEc2DiscordBot"
+title = "Update S3 with lambda on Github Push"
+type = "post"
 
++++
 # Updating an S3 bucket with Lambda
 
 ## Why
-I got tired of having to take my build directory and manually put it in S3, make it public and create a fucking CloudFront invalidation everytime I wanted to make a little change to my website [I'm very lazy]. In addition to the fact I could make a post about it and learn more about interacting with S3 services from within Lambda.
+This is useful for someone who wants more control over the traditional hugo deploy or wants code to run on merging pull requests. 
 
 ## How
 Code and ~~cocaine~~ **coffee**, how else?
