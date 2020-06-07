@@ -23,8 +23,8 @@ canonifyURLs = true
   # Sets navbarTitle to match the section of the website
   dynamicTitles        = true
   # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
+  rssAppearAtTop       = false
+  rssAppearAtBottom    = false
   # Sets Social Media icons to appear on the sidebar
   socialAppearAtTop    = true
   socialAppearAtBottom = true
@@ -44,13 +44,13 @@ canonifyURLs = true
   socialShare          = true
   # Sets specific share to appear on posts (default behavior is to appear)
   socialShareTwitter   = true
-  socialShareGoogleplus = true
+  socialShareGoogleplus = false
   socialShareFacebook  = true
   socialShareReddit    = true
   socialShareLinkedin  = true
-  socialShareStumbleupon = true
-  socialSharePinterest = true
-  socialShareEmail     = true
+  socialShareStumbleupon = false
+  socialSharePinterest = false
+  socialShareEmail     = false
 
   # Load custom CSS or JavaScript files. The variable is an array so that you
   # can load multiple files if necessary. You can also load the standard theme
@@ -151,47 +151,37 @@ canonifyURLs = true
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "jpescador/hugo-future-imperfect"
+  github           = "leobeosab"
   gitlab           = ""
-  stackoverflow    = "" # User Number
+  stackoverflow    = "5597630" # User Number
   bitbucket        = ""
   jsfiddle         = ""
   codepen          = ""
   # Visual Art Communities
   deviantart       = ""
-  flickr           = "example"
   behance          = ""
   dribbble         = ""
   # Publishing Communities
   wordpress        = ""
   medium           = ""
   # Professional/Business Oriented Communities
-  linkedin         = "example"
-  linkedin_company = "examplebusiness"
+  linkedin         = "ryan-wise"
+  linkedin_company = ""
   foursquare       = ""
   xing             = ""
   slideshare       = ""
-  # Social Networks
-  facebook         = "example"
+  facebook         = ""
   googleplus       = ""
-  reddit           = "example"
+  reddit           = ""
   quora            = ""
   youtube          = ""
   vimeo            = ""
-  whatsapp         = "" # WhatsApp Number
-    # WeChat and QQ need testing.
-    wechat         = ""
-    qq             = "" # User ID Number
-  instagram        = "example"
+  instagram        = ""
   tumblr           = ""
-  twitter          = "example"
+  twitter          = "ride_faster"
   skype            = ""
   snapchat         = ""
-  pinterest        = "example"
-  telegram         = "example"
   vine             = ""
   googlescholar    = ""
   orcid            = ""
-  researchgate     = "example"
-  # Email
-  email            = "example"
+  email            = "ryan@ryanwise.me"
