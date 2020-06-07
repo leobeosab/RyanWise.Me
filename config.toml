@@ -186,3 +186,10 @@ Copyright = '&copy; 2020 Ryan Wise'
   googlescholar    = ""
   orcid            = ""
   email            = "ryan@ryanwise.me"
+
+[deployment]
+
+[[deployment.targes]]
+name = "s3"
+URL = "s3://ryanwise.me?region=us-west-2"
+cloudFrontDistributionID = "E8G7ATUPBJEIE"
