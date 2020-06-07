@@ -3,8 +3,7 @@ title = "About Ryan"
 date = "2020-6-6"
 +++
 
-## Intro
-Hi! I'm Ryan, a software engineer with a focus on security, performance and clean design. If any of my projects interest you and you have questions or want something similar made for you please reach out to me! I can be reached on Twitter or email. 
+Hi! I'm Ryan, a software engineer with a focus on security, performance and clean design. If any of my projects interest you and you have questions or want something similar made for you please reach out to me! I can be reached on [Twitter](https://twitter.com/ride_faster) or [email](mailto:ryan@ryanwise.me). 
 
 ## Experience
 * 4 years of professional programming experience since graduating high school in 2016
