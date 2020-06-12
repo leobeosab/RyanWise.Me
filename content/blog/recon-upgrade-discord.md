@@ -93,7 +93,7 @@ func main() {
 ```
 Now we can just
 ```bash
-export export D_NOTIFICATION_WH=[your webhook url]
+export D_NOTIFICATION_WH=[your webhook url]
 go run discordmessage.go "Hello, World!" 
 
 # Or get fancy and install
@@ -102,7 +102,7 @@ discordmessage "Hello, World!" # From anywhere as long as your gobin is in your 
 ```
 
 ### Practial Example
-Aka very lazy but to the point example because I want to go play Call of Duty Modern Warefare
+Aka very lazy but to the point example because I want to go play Call of Duty Modern Warfare
 
 Let's say we have a script running `knock.py yahoo.com > subs.txt` everyday and everyday we check it to see if there is anything new. Well let's automate this checking with the following. 
 
