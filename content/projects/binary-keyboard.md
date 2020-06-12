@@ -30,6 +30,13 @@ This is built pretty easily with an Arduino micro, 2 buttons( I used Cherry MX k
 
 A step by step guide will also be up once I get some more parts in for a second one 
 
+### Part list with links
+
+- [Arduino Pro Micro](https://amzn.to/2YGlE0P) (genuine if you want the case to fit)
+- [OLED Screen](https://amzn.to/3cX4bGl)
+- [Green MX Switches](https://amzn.to/3f8YsyK)
+- [Perfboard](https://amzn.to/3hhYaY5) & [Hook Up Wire](https://amzn.to/2XToUX7)
+
 ## The case
 
 The case was built with fusion 360 and I will upload the STL files very soon (they need to be tweaked). After the case was modeled it was printed on my [Ender3](https://amzn.to/2YnpGuG) 3D printer and assembled with M3x6mm screws. The bottom took 5 hours and the top took an hour. I'm considering selling the cases and whole finished project on Etsy.
