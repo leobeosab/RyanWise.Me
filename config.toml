@@ -12,6 +12,9 @@ enableRobotsTXT = true
 canonifyURLs = true
 Copyright = '&copy; 2020 Ryan Wise'
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
   # Sets the meta tag description
   description          = "Rambling about web security, programming, keyboards and cars"  
