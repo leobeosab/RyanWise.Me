@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "26d44dd9aa3ccb62",
+        "id": "721c85910a48208a",
         "type": "tabs",
         "children": [
           {
-            "id": "1599b5128251e371",
+            "id": "8010ff23a2ad2653",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/binary-keyboard-automator.md",
+                "file": "content/projects/morse-keyboard.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects/binary-keyboard-automator.md",
+                "file": "content/projects/morse-keyboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects/binary-keyboard-automator.md",
+                "file": "content/projects/morse-keyboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/binary-keyboard-automator.md"
+                "file": "content/projects/morse-keyboard.md"
               }
             }
           }
@@ -147,32 +147,34 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "1599b5128251e371",
+  "active": "8010ff23a2ad2653",
   "lastOpenFiles": [
+    "themes/hugo-future-imperfect/layouts/shortcodes/video.html",
+    "assets/img/projects/morse keyboard/morse.webm",
+    "assets/img/projects/morse keyboard/morse.gif",
+    "assets/img/9ce870ce0a04afaf478f915526198f97_MD5.jpeg",
+    "assets/img/Pasted image 20231122060745.png",
+    "assets/img/projects/morse keyboard/morse_featured.jpeg",
+    "assets/img/projects/morse keyboard/morse_case.jpeg",
+    "content/projects/morse-keyboard.md",
+    "assets/img/logo.png",
+    "assets/img/projects/morse keyboard",
+    "assets/img/Screenshot 2023-11-26 at 3.02.56 AM.png",
+    "content/projects/binary-keyboard.md",
+    "public/assets/img/projects/binary keyboard/binkeebpcb2.png",
+    "public/assets/img/projects/binary keyboard/binkeebpcb.png",
+    "public/assets/img/projects/binary keyboard/binkeebcase.png",
+    "public/assets/img/projects/binary keyboard",
+    "content/projects/binary-keyboard-automator.md",
+    "assets/img/projects/binary keyboard",
+    "content/blog/java-on-c9.md",
     "public/js/util.js",
     "public/js/main.js",
     "public/js/backToTop.js",
     "public/js/add-on.js",
     "public/js",
     "public/fonts/academicons.woff",
-    "public/fonts/academicons.ttf",
-    "public/fonts/academicons.svg",
-    "public/fonts/academicons.eot",
-    "public/fonts",
-    "public/css/main.css",
-    "public/css/add-on.css",
-    "public/assets/img/posts/unity-map-from-image/prefab_looks.png",
-    "public/assets/img/posts/unity-map-from-image/prefab_example.png",
-    "public/assets/img/posts/unity-map-from-image/load_image.png",
-    "public/assets/img/posts/unity-map-from-image/level_image.png",
-    "public/assets/img/posts/unity-map-from-image/image_import_settings.png",
-    "public/assets/img/posts/unity-map-from-image/custom_window.jpg",
-    "public/assets/img/posts/unity-map-from-image/completed.png",
-    "public/assets/img/posts/recon-upgrade-discord/practicalexample.png",
-    "public/assets/img/posts/recon-upgrade-discord/example_curl.png",
-    "content/projects/binary-keyboard.md",
     "content/projects/lambda-s3-updater.md",
-    "content/projects/binary-keyboard-automator.md",
     "content/blog/unity-map-from-image.md",
     "themes/hugo-future-imperfect/archetypes/projects.md",
     "themes/hugo-future-imperfect/archetypes/default.md",
@@ -186,7 +188,6 @@
     "themes/hugo-future-imperfect-edited/LICENSE.md",
     "content/blog/recon-upgrade-discord.md",
     "content/blog/python-with-apex.md",
-    "content/blog/java-on-c9.md",
     "content/blog/intigriti-xss-challenge.md",
     "content/blog/deploy-to-new-devices-xcode.md",
     "content/about/_index.md"

@@ -147,42 +147,11 @@ Copyright = '&copy; 2020 Ryan Wise'
   identifier = "fa fa-envelope-o"
   weight = 6
 
-# Sets Social Media icons to appear and link to your account. Value should be your
-# username unless otherwise noted. These are the icons affected by socialAppearAtTop
-# and socialAppearAtBottom.
 [social]
-  # Coding Communities
   github           = "leobeosab"
-  gitlab           = ""
   stackoverflow    = "5597630" # User Number
-  bitbucket        = ""
-  jsfiddle         = ""
-  codepen          = ""
-  # Visual Art Communities
-  deviantart       = ""
-  behance          = ""
-  dribbble         = ""
-  # Publishing Communities
-  wordpress        = ""
-  medium           = ""
-  # Professional/Business Oriented Communities
-  foursquare       = ""
-  xing             = ""
-  slideshare       = ""
-  facebook         = ""
-  googleplus       = ""
   reddit           = "leobeosab"
-  quora            = ""
-  youtube          = ""
-  vimeo            = ""
-  instagram        = ""
-  tumblr           = ""
-  skype            = ""
   tiktok           = "convictcantaloupe"
-  snapchat         = ""
-  vine             = ""
-  googlescholar    = ""
-  orcid            = ""
   email            = "ryan@ryanwise.me"
 
 [deployment]
