@@ -19,7 +19,6 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {{ .Hugo.Generator }}
         {{ partial "favicon" . }}
 
         {{ with .Params.author }}
@@ -40,7 +39,6 @@
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         {{ template "_internal/schema.html" . }}
-        {{ template "_internal/google_news.html" . }}
 
         {{ if isset .Site.Params "customcss" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.customCSS }}
@@ -48,6 +46,7 @@
             {{ $.Scratch.Set "cssFiles" false }}
         {{ end }}
 
+        <script src="https://kit.fontawesome.com/512749d719.js" crossorigin="anonymous"></script>
         <!-- If the value "default" is passed into the param then we will first
              load the standard css files associated with the theme -->
         {{ if or (in ($.Scratch.Get "cssFiles") "default") (eq ($.Scratch.Get "cssFiles") false) }}

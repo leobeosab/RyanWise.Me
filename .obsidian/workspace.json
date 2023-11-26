@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "d0da2061c6d3eafb",
+    "type": "split",
+    "children": [
+      {
+        "id": "26d44dd9aa3ccb62",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1599b5128251e371",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/binary-keyboard-automator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "791a3116b2211e89",
+    "type": "split",
+    "children": [
+      {
+        "id": "69631e47644fd3d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b2b67d5205b7a3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9668c218d01ebef4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "294e1f760bf10310",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4f4fd13e9a612b59",
+    "type": "split",
+    "children": [
+      {
+        "id": "5094c34b13d1ea34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb1907ac0668822f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/projects/binary-keyboard-automator.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c2a2673e677b9aae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/projects/binary-keyboard-automator.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b88eca8389deb371",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dbbc79df58321bca",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/projects/binary-keyboard-automator.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
+    }
+  },
+  "active": "1599b5128251e371",
+  "lastOpenFiles": [
+    "public/js/util.js",
+    "public/js/main.js",
+    "public/js/backToTop.js",
+    "public/js/add-on.js",
+    "public/js",
+    "public/fonts/academicons.woff",
+    "public/fonts/academicons.ttf",
+    "public/fonts/academicons.svg",
+    "public/fonts/academicons.eot",
+    "public/fonts",
+    "public/css/main.css",
+    "public/css/add-on.css",
+    "public/assets/img/posts/unity-map-from-image/prefab_looks.png",
+    "public/assets/img/posts/unity-map-from-image/prefab_example.png",
+    "public/assets/img/posts/unity-map-from-image/load_image.png",
+    "public/assets/img/posts/unity-map-from-image/level_image.png",
+    "public/assets/img/posts/unity-map-from-image/image_import_settings.png",
+    "public/assets/img/posts/unity-map-from-image/custom_window.jpg",
+    "public/assets/img/posts/unity-map-from-image/completed.png",
+    "public/assets/img/posts/recon-upgrade-discord/practicalexample.png",
+    "public/assets/img/posts/recon-upgrade-discord/example_curl.png",
+    "content/projects/binary-keyboard.md",
+    "content/projects/lambda-s3-updater.md",
+    "content/projects/binary-keyboard-automator.md",
+    "content/blog/unity-map-from-image.md",
+    "themes/hugo-future-imperfect/archetypes/projects.md",
+    "themes/hugo-future-imperfect/archetypes/default.md",
+    "themes/hugo-future-imperfect/archetypes/blog.md",
+    "themes/hugo-future-imperfect/README.md",
+    "themes/hugo-future-imperfect/LICENSE.md",
+    "themes/hugo-future-imperfect-edited/archetypes/projects.md",
+    "themes/hugo-future-imperfect-edited/archetypes/default.md",
+    "themes/hugo-future-imperfect-edited/archetypes/blog.md",
+    "themes/hugo-future-imperfect-edited/README.md",
+    "themes/hugo-future-imperfect-edited/LICENSE.md",
+    "content/blog/recon-upgrade-discord.md",
+    "content/blog/python-with-apex.md",
+    "content/blog/java-on-c9.md",
+    "content/blog/intigriti-xss-challenge.md",
+    "content/blog/deploy-to-new-devices-xcode.md",
+    "content/about/_index.md"
+  ]
+}

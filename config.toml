@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Ryan Wise's Blog"
-theme = "hugo-future-imperfect-edited"
+theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 5
 disqusShortname = ""
@@ -166,21 +166,19 @@ Copyright = '&copy; 2020 Ryan Wise'
   wordpress        = ""
   medium           = ""
   # Professional/Business Oriented Communities
-  linkedin         = "ryan-wise"
-  linkedin_company = ""
   foursquare       = ""
   xing             = ""
   slideshare       = ""
   facebook         = ""
   googleplus       = ""
-  reddit           = ""
+  reddit           = "leobeosab"
   quora            = ""
   youtube          = ""
   vimeo            = ""
   instagram        = ""
   tumblr           = ""
-  twitter          = "ride_faster"
   skype            = ""
+  tiktok           = "convictcantaloupe"
   snapchat         = ""
   vine             = ""
   googlescholar    = ""
@@ -193,3 +191,11 @@ Copyright = '&copy; 2020 Ryan Wise'
 name = "s3"
 URL = "s3://ryanwise.me?region=us-west-2"
 cloudFrontDistributionID = "E8G7ATUPBJEIE"
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'assets'
+target = 'static/assets'

@@ -1,21 +1,21 @@
 +++
 author = "Ryan Wise"
 categories = ["Tools", "Hardware"]
-tags = ["arduino"]
-date = "2020-06-11"
+tags = ["arduino", "keyboard", "pcb"]
+date = "2023-01-02"
 description = "Use 0s and 1s to type like the most elitest keyboard user ever"
 featuredpath = "/assets/img/projects"
 featuredalt = "Binary Keyboard"
-featured = "binary_keyboard_new.jpg"
+featured = "binary_keyboard_main.jpeg"
 linktitle = ""
-title = "Binary Keyboard Project"
+title = "Binary Keyboard"
 type = "post"
 
 +++
 
 ## A what?
 
-This is probably one of my most useless creations. It's a 2 key keyboard for the most tedious typing experience ever. Basically you type in 8 bits on once you hit the 8th one it will take the value of the byte and put the corresponding ascii code and output it to the connected computer. As an example:
+This is a fun desk toy that could have use as a macro pad if you mapped macros to the 8 bits. It's a 2 key keyboard for the most tedious typing experience ever. The keyboard will have you type 8 bits, on the 8th bit entered it will send the connected computer the correlated ASCII code. Thus being a technically fully functioning keyboard using 2 keys.
 
 ```
 01100001 = a
@@ -28,25 +28,31 @@ This is probably one of my most useless creations. It's a 2 key keyboard for the
 
 This is built pretty easily with an Arduino micro, 2 buttons( I used Cherry MX keyswitches) and an OLED(optional) display. The code is [here](https://github.com/leobeosab/binarykeyboard). Download the code and map the the pins for I2C control (2&3) to the oled and 4+5 to the buttons and it will just work. It's super simple. 
 
-A step by step guide will also be up once I get some more parts in for a second one 
-
 ### Part list with links
 
-- [Arduino Pro Micro](https://amzn.to/2YGlE0P) (genuine if you want the case to fit)
+- [Arduino Micro](https://amzn.to/2YGlE0P) (Not the pro micro)
 - [OLED Screen](https://amzn.to/3cX4bGl)
 - [Green MX Switches](https://amzn.to/3f8YsyK)
-- [Perfboard](https://amzn.to/3hhYaY5) & [Hook Up Wire](https://amzn.to/2XToUX7)
+
+## The PCB
+The PCB was designed using EasyEDA, this was my first PCB design. I've done more since but this was a good starting point with no extra external components and just making connections.
+![PCB image](assets/img/projects/binkeebpcb2.png)
 
 ## The case
 
-The case was built with fusion 360 and I will upload the STL files very soon (they need to be tweaked). After the case was modeled it was printed on my [Ender3](https://amzn.to/2YnpGuG) 3D printer and assembled with M3x6mm screws. The bottom took 5 hours and the top took an hour. I'm considering selling the cases and whole finished project on Etsy.
-
+The case was modeled in Onshape, it's VERY simple and was attached with hot glue, I'm going to update it to just clip to the binary keyboard. [Here](https://cad.onshape.com/documents/42e5bccf31b5981d8c058959/w/61b83b74ed54f1bbbaa18a41/e/b39b02a284b23861a57fb298) is the link if you'd like to try to modify it. 
+![](assets/img/projects/binkeebcase.png)
 ## Future Plans
 
-The current design looks good in my opinion but I'm going to get a PCB made for a more professional look and feel. The only other improvement I'm currently considering is possibly and aluminum case? Depending on the cost of it of course :) 
+I'm making a new PCB at some point without using an Arduino board and just embedding the micro controller on the PCB itself. 
 
-## Previous build from 2017
+## Previous Builds
+I have now gone back and remade this project a few times over about 7 years. It's a simple project that I love to come back to with new skills I've learned and see what can be improved.
 
-I made something very similar to this a few years ago and it looked nowhere near what it does now. Just thought it would be cool to look at the progress from then to now
+
+Version 1 when I got my first 3D printer
+![version1](/assets/img/projects/binary_keyboard_older.jpg)
+
+Version 0 from around 2016 right after I graduated High School:
 
 ![/assets/img/projects/binary_keyboard.jpg](/assets/img/projects/binary_keyboard.jpg)
