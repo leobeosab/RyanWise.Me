@@ -90,7 +90,7 @@ Copyright = '&copy; 2020 Ryan Wise'
 
   paragraph = "Rambling about web security, programming, keyboards and cars"
 
-  about     = "I'm a software engineer with a focus on security, performance and clean design. Also a big fan of mechanical keyboards, cars, motorcycles and anything mechanical or tech."
+  about     = "I'm a software engineer with a focus on infrastructure ( DevOps ), and security. I'm also a big fan of mechanical keyboards, woodworking, cars, motorcycles and anything mechanical or tech."
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
