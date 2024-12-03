@@ -26,7 +26,7 @@ This is a fun desk toy that could have use as a macro pad if you mapped macros t
 
 ## How to build
 
-This is built pretty easily with an Arduino micro, 2 buttons( I used Cherry MX keyswitches) and an OLED(optional) display. The code is [here](https://github.com/leobeosab/binarykeyboard). Download the code and map the the pins for I2C control (2&3) to the oled and 4+5 to the buttons and it will just work. It's super simple. 
+This is built pretty easily with an Arduino micro, 2 buttons( I used Cherry MX keyswitches) and an OLED(optional) display. The code is [here](https://github.com/leobeosab/binarykeyboard). Download the code and map the pins for I2C control (2&3) to the OLED and 4+5 to the buttons and it will just work. It's super simple. 
 
 ### Part list with links
 

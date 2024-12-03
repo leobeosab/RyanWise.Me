@@ -286,7 +286,7 @@ void InsertObjects()
 }
 ```
 
-We make sure to destroy the previous level by using the parent_name and create a new one. We make sure to grab the image width and height to iterate over the x and y positions of the image and assign an object to each of those positions with an offset of the object's size so they fit right next to each other every time.
+We make sure to destroy the previous level by using the parent_name and create a new one. Then grab the image width and height to iterate over the x and y positions of the image. Assigning an object to each of those positions with an offset of the object's size so they fit right next to each other every time.
 
 Now when you run your code you should have an output like this:
 

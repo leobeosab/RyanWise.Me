@@ -4,17 +4,15 @@ title = "Ryan Wise's Blog"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 5
-disqusShortname = ""
 googleAnalytics = ""
 pluralizeListTitles = false
-# Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true
 Copyright = '&copy; 2020 Ryan Wise'
 
 [params]
   # Sets the meta tag description
-  description          = "Rambling about web security, programming, keyboards and cars"  
+  description          = "Rambling about web infrastructure, security, programming, keyboards and cars"  
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Ramblin' on"
   # Sets where "View More Posts" links
@@ -103,7 +101,7 @@ Copyright = '&copy; 2020 Ryan Wise'
     # Sets Image to be Future Imperfect's hexagon
     imperfect = true
     width     = ""
-    alt       = "Hugo Future Imperfect"
+    alt       = "Ryan Wise"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
@@ -147,11 +145,8 @@ Copyright = '&copy; 2020 Ryan Wise'
   identifier = "fa fa-envelope-o"
   weight = 6
 
-[social]
+[params.social]
   github           = "leobeosab"
-  stackoverflow    = "5597630" # User Number
-  reddit           = "leobeosab"
-  tiktok           = "convictcantaloupe"
   email            = "ryan@ryanwise.me"
 
 [deployment]

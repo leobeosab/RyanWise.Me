@@ -13,7 +13,7 @@ type = "post"
 
 +++
 # Efficiency 
-that's what this is. 1 Key all of the combinations. Is there any reason to even use a 100% keyboard anymore? I feel the 1% keyboard is going to revolutionize home computing! 
+That's what this is. 1 Key all the combinations. Is there any reason to even use a 100% keyboard anymore? I feel the 1% keyboard is going to revolutionize home computing! 
 
 On a real note, this keyboard was a blast to make. Morse code is harder than I'd like to admit but it functions pretty well I think! I made this curious little keyboard as a response to yet more requests from my binary keyboard video.
 

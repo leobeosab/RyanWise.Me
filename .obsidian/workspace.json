@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/morse-keyboard.md",
+                "file": "content/about/_index.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "_index"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects/morse-keyboard.md",
+                "file": "content/about/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for _index"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects/morse-keyboard.md",
+                "file": "content/about/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from _index"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/morse-keyboard.md"
-              }
+                "file": "content/about/_index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of _index"
             }
           }
         ]
@@ -149,6 +165,18 @@
   },
   "active": "8010ff23a2ad2653",
   "lastOpenFiles": [
+    "content/blog/deploy-to-new-devices-xcode.md",
+    "content/blog/intigriti-xss-challenge.md",
+    "content/blog/java-on-c9.md",
+    "content/blog/python-with-apex.md",
+    "content/blog/recon-upgrade-discord.md",
+    "content/blog/unity-map-from-image.md",
+    "content/contact/_index.md",
+    "content/projects/aws-discord-bot.md",
+    "content/projects/binary-keyboard.md",
+    "content/projects/binary-keyboard-automator.md",
+    "content/projects/morse-keyboard.md",
+    "content/projects/lambda-s3-updater.md",
     "themes/hugo-future-imperfect/layouts/shortcodes/video.html",
     "assets/img/projects/morse keyboard/morse.webm",
     "assets/img/projects/morse keyboard/morse.gif",
@@ -156,26 +184,19 @@
     "assets/img/Pasted image 20231122060745.png",
     "assets/img/projects/morse keyboard/morse_featured.jpeg",
     "assets/img/projects/morse keyboard/morse_case.jpeg",
-    "content/projects/morse-keyboard.md",
     "assets/img/logo.png",
     "assets/img/projects/morse keyboard",
     "assets/img/Screenshot 2023-11-26 at 3.02.56 AM.png",
-    "content/projects/binary-keyboard.md",
     "public/assets/img/projects/binary keyboard/binkeebpcb2.png",
     "public/assets/img/projects/binary keyboard/binkeebpcb.png",
     "public/assets/img/projects/binary keyboard/binkeebcase.png",
     "public/assets/img/projects/binary keyboard",
-    "content/projects/binary-keyboard-automator.md",
     "assets/img/projects/binary keyboard",
-    "content/blog/java-on-c9.md",
     "public/js/util.js",
     "public/js/main.js",
     "public/js/backToTop.js",
     "public/js/add-on.js",
     "public/js",
-    "public/fonts/academicons.woff",
-    "content/projects/lambda-s3-updater.md",
-    "content/blog/unity-map-from-image.md",
     "themes/hugo-future-imperfect/archetypes/projects.md",
     "themes/hugo-future-imperfect/archetypes/default.md",
     "themes/hugo-future-imperfect/archetypes/blog.md",
@@ -186,10 +207,6 @@
     "themes/hugo-future-imperfect-edited/archetypes/blog.md",
     "themes/hugo-future-imperfect-edited/README.md",
     "themes/hugo-future-imperfect-edited/LICENSE.md",
-    "content/blog/recon-upgrade-discord.md",
-    "content/blog/python-with-apex.md",
-    "content/blog/intigriti-xss-challenge.md",
-    "content/blog/deploy-to-new-devices-xcode.md",
     "content/about/_index.md"
   ]
 }

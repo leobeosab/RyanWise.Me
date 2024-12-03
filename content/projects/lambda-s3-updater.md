@@ -23,7 +23,7 @@ Code and ~~cocaine~~ **coffee**, how else?
 
 This is just a basic AWS Lambda function wirtten in Python 3.7 using no extra libraries not included with Lambda's runtime. Everytime someone pushes to my website repo Github sends out a PUSH event using a [Webhook](https://developer.github.com/webhooks/) which hits an API published on AWS' API Gateway activating said lambda function. 
 
-All this code does is download the zip file of the repo (it's gotta be public or you'll have to handle some auth stuff), Go through each file and check if it's part of the build directory (there are better ways of doing this, I'm lazy), upload each file to S3, and finally create an invalidation in Cloud Front so it doesn't show cached files. Feel free to take this code and use it however the hell you want. License: [WTFPL](http://www.wtfpl.net)
+All this code does is download the zip file of the repo (it's gotta be public or you'll have to handle some auth stuff). Go through each file and ensure it's part of the build directory (there are better ways of doing this, I'm lazy). Now upload each file to S3, and create an invalidation in Cloud Front so it doesn't show cached files. Feel free to take this code and use it however the hell you want. License: [WTFPL](http://www.wtfpl.net)
 
 ## The Code + Github link 
 [Github](https://github.com/leobeosab/AWSAPITools/tree/master/functions/PortGitToS3)
@@ -107,8 +107,3 @@ def handle(event, context):
         'body': json.dumps(body)
     }
 ```
-
-## Follow me
-Follow me, my friends, dumb memes, interesting tech topics and way too much car stuff. 
-
-Github [@leobeosab](https://github.com/leobeosab) & Twitter [@ride_faster](https://twitter.com/ride_faster)
