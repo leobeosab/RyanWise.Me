@@ -1,12 +1,26 @@
 # RyanWise.Me
-
-Portfolio site for showcasing projects and life events, statically hosted using AWS S3
+My Personal portfolio site for various projects and tomfoolery. Markdown site, best site. 
 
 ## Tools Needed
-* Jekyll
+* hugo
+* aws-cli ( deployment only )
 
-## Notes
-Repository is automatically synched with S3 bucket on pushes to Master using a Webhook and Lambda function
+## Running Locally
+```
+hugo serve
+```
+
+## Building
+```
+hugo build
+```
+
+## Deploying ( with aws cli configured locally )
+I'm planning on adding a Github action for deploying this but it's easy enough to just run the following command for now
+```
+hugo deploy
+```
 
 ## Theme
-Theme is forked from [TaylanTatli/Moon](https://github.com/TaylanTatli/Moon) with a few style and page layout changes
+Planning on a complete re-work of the theme and site in the coming weeks. 
+Theme is hugo-future-imperfect with a few style and page layout changes
