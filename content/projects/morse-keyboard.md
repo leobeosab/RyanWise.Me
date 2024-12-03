@@ -39,7 +39,7 @@ While brainstorming how to keep track of the dits and dahs and convert them into
 * B could be 1000
 * C could be 1010
 * E could be 0
-![](assets/img/9ce870ce0a04afaf478f915526198f97_MD5.jpeg)
+![](../../assets/img/9ce870ce0a04afaf478f915526198f97_MD5.jpeg)
 but this doesn't work when we get to fun characters like H which is 0000 so how would we track that? Maybe start the integer off at 1 and bitshift left each time hit the key? Or create a struct that has the code and character attached to it and a map linking them?
 
 I went for a weird approach. I still wanted a simple primitive datatype to store the current character and map in. So keeping with the single integer for tracking the value, I decided on a 2 dimensional int array for the keymap. 
