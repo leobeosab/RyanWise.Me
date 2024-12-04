@@ -4,3 +4,17 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   within the formating given.
 */
+
+.player-container {
+    margin: 1em 0px;
+}
+
+#player-wrapper div {
+    margin: auto;
+}
+
+#content img {
+    max-width: 75%;
+    margin: auto;
+    display: inherit;
+}
