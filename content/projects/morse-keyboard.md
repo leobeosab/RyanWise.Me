@@ -1,7 +1,7 @@
 +++
 author = "Ryan Wise"
 categories = ["Tools", "Hardware"]
-tags = ["arduino", "keyboard"]
+tags = ["arduino", "hid"]
 date = "2023-11-20"
 description = "Bombers aren't flying overhead, but we can type like it"
 featuredpath = "/assets/img/projects/morse keyboard"
