@@ -1,5 +1,12 @@
+{{ $id := "" }}
+{{ $src := "" }}
+
+{{ if .Get 1 }}
+  {{ $id = .Get 1 }}
+{{ end }}
+
 <div class="player-container">
-  <div id="player-wrapper" class="{{ .Get 1 }}"></div>
+  <div id="player-wrapper{{ $id }}" class="video-player {{ .Get 2 }}"></div>
 </div>
 
 <script 
@@ -9,7 +16,7 @@
 </script>
 
 <script>
-  var playerElement = document.getElementById("player-wrapper");
+var playerElement = document.getElementById("player-wrapper{{ $id }}");
 
   var player = new Clappr.Player({
     source: {{ .Get 0 }},

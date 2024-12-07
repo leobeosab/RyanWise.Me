@@ -1,7 +1,7 @@
 +++
 author = "Ryan Wise"
 categories = ["Tools", "Hardware"]
-tags = ["arduino", "keyboard", "pcb"]
+tags = ["arduino", "hid"]
 date = "2023-01-02"
 description = "Use 0s and 1s to type like the most elitest keyboard user ever"
 featuredpath = "/assets/img/projects/binary keyboard"

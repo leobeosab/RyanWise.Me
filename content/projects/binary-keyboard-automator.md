@@ -1,7 +1,7 @@
 +++
 author = "Ryan Wise"
 categories = ["Hardware"]
-tags = ["arduino", "keyboard"]
+tags = ["arduino", "hid"]
 date = "2023-11-02"
 description = "Binary keyboard too slow? Try this!"
 featuredpath = "/assets/img/projects/binary keyboard"
